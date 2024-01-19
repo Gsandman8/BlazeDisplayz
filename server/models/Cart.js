@@ -13,8 +13,6 @@ const cartSchema = new Schema({
                 type: Date,
                 default: Date.now
             },
-        },
-        {
             quantity: {
                 type: Number,
                 min: 1,
