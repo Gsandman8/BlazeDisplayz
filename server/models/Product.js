@@ -17,7 +17,6 @@ const productSchema = new Schema({
   price: {
     type: Number,
     required: true,
-    min: 0.99
   },
   quantity: {
     type: Number,
@@ -28,7 +27,13 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
-  }
+  },
+  tags: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Tag'
+    }
+  ]
 });
 
 const Product = mongoose.model('Product', productSchema);
