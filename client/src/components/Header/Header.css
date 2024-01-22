@@ -1,0 +1,16 @@
+header{
+  padding: 15px;
+}
+
+section h1{
+  color: red;
+}
+
+.icons-container a, .langIcon{
+  margin-right: 10%;
+  color: white;
+}
+
+.icons-container{
+  margin-left: 15%;
+}
