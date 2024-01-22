@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import MissingOrder from '../components/MissingOrder/MissingOrder';
+import '../components/MissingOrder/MissingOrder.css';
 import Auth from '../utils/auth';
 
 function Login(props) {
@@ -91,6 +93,8 @@ function Login(props) {
         <p style={{ fontSize: '17px', color: 'black', marginTop: '2%' }}>Don't have an account?</p>
         <Link to="/signup" style={{color:'black'}}>Create One Now</Link>
       </div>
+
+      <MissingOrder />
 
     </div>
   );
