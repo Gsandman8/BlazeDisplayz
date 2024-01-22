@@ -1,0 +1,24 @@
+#navLink{
+  color: red;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#menuList {
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+  position: absolute;
+  top: 8%;
+  background-color: red;
+  width: 12%;
+}
+
+#menuList a{
+  color: blue;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
