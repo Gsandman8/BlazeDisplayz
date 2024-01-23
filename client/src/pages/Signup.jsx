@@ -5,6 +5,7 @@ import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import MissingOrder from '../components/MissingOrder/MissingOrder';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TextField from '@mui/material/TextField';
 
 export default function Signup(props) {
   const [formState, setFormState] = useState({ 
@@ -65,69 +66,83 @@ export default function Signup(props) {
         <Link to="/login">← Go to Login</Link>
         <h2> Create an Account</h2>
         <form onSubmit={handleFormSubmit}>
-                <div>
-                  <input
-                    placeholder="First Name *"
-                    name="firstName"
-                    type="firstName"
-                    id="firstName"
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <input
-                    placeholder="Last Name *"
-                    name="lastName"
-                    type="lastName"
-                    id="lastName"
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <input
-                    placeholder="Email *"
-                    name="email"
-                    type="email"
-                    id="email"
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <input
-                    placeholder="Confirm Email *"
-                    name="confirmEmail"
-                    type="email"
-                    id="confirmEmail"
-                    onChange={handleChange}
-                  />
-                </div>
-                {confirmEmailErr &&  <p style={{ color: 'red' }}>{confirmEmailErr}</p>}
-                <div>
-                  <input
-                    placeholder="Password *"
-                    name="password"
-                    type="password"
-                    id="pwd"
-                    onChange={handleChange}
-                  />
-                </div>
-                <div>
-                  <input
-                    placeholder="Confirm Password *"
-                    name="confirmPassword"
-                    type="password"
-                    id="confirmPassword"
-                    onChange={handleChange}
-                  />
-                </div>
-                {confirmPasswordErr && <p style={{ color: 'red' }}>{confirmPasswordErr}</p>}
-                <div>
-                  <button type="submit">Create Account </button>
-                </div>
+          <TextField
+            placeholder="John"
+            name="firstName"
+            type="firstName"
+            id="firstName"
+            onChange={handleChange}
+            variant="standard"
+            fullWidth
+            label="First Name *"
+            style={{marginBottom:'10px'}}
+          />
+          <TextField
+            placeholder="Doe"
+            name="lastName"
+            type="lastName"
+            id="lastName"
+            onChange={handleChange}
+            variant="standard"
+            fullWidth
+            label="Last Name *"
+            style={{marginBottom:'10px'}}
+          />
+          <TextField
+            placeholder="me@email.com"
+            name="email"
+            type="email"
+            id="email"
+            onChange={handleChange}
+            variant="standard"
+            fullWidth
+            label="Email *"
+            style={{marginBottom:'10px'}}                 
+          />  
+          <TextField
+            placeholder="me@email.com"
+            name="confirmEmail"
+            type="email"
+            id="confirmEmail"
+            onChange={handleChange}
+            variant="standard"
+            fullWidth
+            label="Confirm Email *"     
+            style={{marginBottom:'10px'}}           
+          />
+          
+          {confirmEmailErr &&  <p style={{ color: 'red' }}>{confirmEmailErr}</p>}
+        
+          <TextField
+            placeholder="********"
+            name="password"
+            type="password"
+            id="pwd"
+            onChange={handleChange}
+            variant="standard"
+            fullWidth
+            label="Password *"
+            style={{marginBottom:'10px'}}
+          /> 
+          <TextField
+            placeholder="********"
+            name="confirmPassword"
+            type="password"
+            id="confirmPassword"
+            onChange={handleChange}
+            variant="standard"
+            fullWidth
+            label="Confirm Password *"
+            style={{marginBottom:'10px'}}
+          />
+          
+          {confirmPasswordErr && <p style={{ color: 'red' }}>{confirmPasswordErr}</p>}
+        
+          <button type="submit">Create Account </button>   
         </form>
       </section>
 
-      <section className="col-md-6 orderContainer">
+      <section className="col-md-6">
           <MissingOrder/>
       </section>
     </div>

@@ -27,10 +27,11 @@ body {
   margin: 10px;
 }
 .createAccContainer input{
-  margin: 15px 0px;
-  border: none;
-  border-bottom: 2px solid #000;
-  border-radius: 0px;
+  border-bottom: solid 2px ;
+}
+
+.textField{
+  margin-bottom: 15px;
 }
 
 body {
