@@ -1,4 +1,4 @@
-const { User, Product, Category, Order } = require('../models');
+const { User, Product, Category, Order, Cart, Wishlist, Tag } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
@@ -7,11 +7,15 @@ const resolvers = {
     categories: async () => {
       return await Category.find();
     },
-    products: async (parent, { category, name }) => {
+    products: async (parent, { category, name, tag }) => {
       const params = {};
 
       if (category) {
         params.category = category;
+      }
+
+      if (tag) {
+        params.tag = tag;
       }
 
       if (name) {
@@ -20,7 +24,7 @@ const resolvers = {
         };
       }
 
-      return await Product.find(params).populate('category');
+      return await Product.find(params).populate('category').populate('tag');
     },
     product: async (parent, { _id }) => {
       return await Product.findById(_id).populate('category');
