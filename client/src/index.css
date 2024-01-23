@@ -26,12 +26,9 @@ body {
 .createAccContainer form{
   margin: 10px;
 }
+
 .createAccContainer input{
   border-bottom: solid 2px ;
-}
-
-.textField{
-  margin-bottom: 15px;
 }
 
 body {
