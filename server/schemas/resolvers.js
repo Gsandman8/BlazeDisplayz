@@ -24,17 +24,18 @@ const resolvers = {
         };
       }
 
-      return await Product.find(params).populate('category').populate('tag');
+      return await Product.find(params).populate('category').populate('tags');
     },
     product: async (parent, { _id }) => {
-      return await Product.findById(_id).populate('category');
+      return await Product.findById(_id).populate('category').populate('tags');
     },
     user: async (parent, args, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
           path: 'orders.products',
           populate: 'category',
-        });
+        }).populate('wishlist')
+        .populate('cart');
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
 
