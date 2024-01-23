@@ -18,6 +18,20 @@ body {
   min-height: 100%;
 }
 
+.createAccContainer{
+  padding: 25px;
+}
+
+.createAccContainer form{
+  margin: 10px;
+}
+.createAccContainer input{
+  /* margin: 15px 0px; */
+  border: none;
+  border-bottom: 2px solid #000;
+  border-radius: 0px;
+}
+
 body {
   margin: 0;
   padding: 0;
