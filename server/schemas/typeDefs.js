@@ -38,6 +38,12 @@ const typeDefs = `
     products: [Product, addedOn: Date, quantity: Int]
   }
 
+  type Tag {
+    _id: ID
+    name: String
+    tagGroup: String
+  }
+
   type Checkout {
     session: ID
   }
@@ -62,7 +68,11 @@ const typeDefs = `
     product(_id: ID!): Product
     user: User
     order(_id: ID!): Order
+    cart(_id: ID!): Cart
+    wishlist(_id: ID!): Wishlist
     checkout(products: [ProductInput]): Checkout
+    getProductByTag(tag: String!): [Product]
+    getProductByCategory(category: String!): [Product]
   }
 
   type Mutation {
@@ -71,6 +81,12 @@ const typeDefs = `
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
+    addToCart(product: ID!, quantity: Int): Cart
+    addToWishlist(product: ID!, quantity: Int): Wishlist
+    removeFromCart(product: ID!): Cart
+    removeFromWishlist(product: ID!): Wishlist
+    clearCart: Cart
+    clearWishlist: Wishlist
   }
 `;
 
