@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
+import MissingOrder from '../components/MissingOrder/MissingOrder';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Signup(props) {
   const [formState, setFormState] = useState({ 
@@ -57,71 +59,78 @@ export default function Signup(props) {
   };
 
   return (
-    <div className='createAccContainer'>
-      <Link to="/login">← Go to Login</Link>
+  <main className='container createAccContainer'>
+    <div className='row'>
+      <section className="col-md-6">
+        <Link to="/login">← Go to Login</Link>
+        <h2> Create an Account</h2>
+        <form onSubmit={handleFormSubmit}>
+                <div>
+                  <input
+                    placeholder="First Name *"
+                    name="firstName"
+                    type="firstName"
+                    id="firstName"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <input
+                    placeholder="Last Name *"
+                    name="lastName"
+                    type="lastName"
+                    id="lastName"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <input
+                    placeholder="Email *"
+                    name="email"
+                    type="email"
+                    id="email"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <input
+                    placeholder="Confirm Email *"
+                    name="confirmEmail"
+                    type="email"
+                    id="confirmEmail"
+                    onChange={handleChange}
+                  />
+                </div>
+                {confirmEmailErr &&  <p style={{ color: 'red' }}>{confirmEmailErr}</p>}
+                <div>
+                  <input
+                    placeholder="Password *"
+                    name="password"
+                    type="password"
+                    id="pwd"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <input
+                    placeholder="Confirm Password *"
+                    name="confirmPassword"
+                    type="password"
+                    id="confirmPassword"
+                    onChange={handleChange}
+                  />
+                </div>
+                {confirmPasswordErr && <p style={{ color: 'red' }}>{confirmPasswordErr}</p>}
+                <div>
+                  <button type="submit">Create Account </button>
+                </div>
+        </form>
+      </section>
 
-      <h2> Create an Account</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div>
-          <input
-            placeholder="First Name *"
-            name="firstName"
-            type="firstName"
-            id="firstName"
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <input
-            placeholder="Last Name *"
-            name="lastName"
-            type="lastName"
-            id="lastName"
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <input
-            placeholder="Email *"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <input
-            placeholder="Confirm Email *"
-            name="confirmEmail"
-            type="email"
-            id="confirmEmail"
-            onChange={handleChange}
-          />
-        </div>
-        {confirmEmailErr &&  <p style={{ color: 'red' }}>{confirmEmailErr}</p>}
-        <div>
-          <input
-            placeholder="Password *"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <input
-            placeholder="Confirm Password *"
-            name="confirmPassword"
-            type="password"
-            id="confirmPassword"
-            onChange={handleChange}
-          />
-        </div>
-        {confirmPasswordErr && <p style={{ color: 'red' }}>{confirmPasswordErr}</p>}
-        <div>
-          <button type="submit">Create Account </button>
-        </div>
-      </form>
+      <section className="col-md-6 orderContainer">
+          <MissingOrder/>
+      </section>
     </div>
+  </main>
   );
 }
