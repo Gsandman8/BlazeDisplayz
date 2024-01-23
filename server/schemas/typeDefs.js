@@ -28,6 +28,16 @@ const typeDefs = `
     orders: [Order]
   }
 
+  type Cart {
+    _id: ID
+    products: [Product, addedOn: Date, quantity: Int] 
+  }
+
+  type Wishlist {
+    _id: ID
+    products: [Product, addedOn: Date, quantity: Int]
+  }
+
   type Checkout {
     session: ID
   }
