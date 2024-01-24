@@ -8,6 +8,7 @@ import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
+import { ShoppingCartOutlined } from '@mui/icons-material';  
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
@@ -57,19 +58,22 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-          🛒
+        <span role="img" aria-label="trash" className='shoppingBag'>
+        <ShoppingCartOutlined fontSize="large"/>
         </span>
       </div>
     );
   }
 
   return (
-    <div className="cart">
-      <div className="close" onClick={toggleCart}>
-        [close]
+    <div className="cart bag">
+      <div className='titleContainer'>
+        <h4>YOUR CART</h4>
+        <div className="close" onClick={toggleCart}>
+          X
+        </div>
       </div>
-      <h2>Shopping Cart</h2>
+      <hr/>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -87,12 +91,14 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
-          You haven't added anything to your cart yet!
-        </h3>
+        <div>
+          <h3>
+            Your cart is empty!
+          </h3>
+          <p>Add your favorite items to your cart.</p>
+          <hr/>
+          <button> Shop Now</button>
+        </div>
       )}
     </div>
   );
