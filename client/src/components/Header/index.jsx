@@ -35,7 +35,7 @@ export default function Header() {
               {/* <Link to="/shopping-bag" className="shopping-bag-icon mr-3"><ShoppingBagOutlined fontSize="large" /></Link> */}
               <Link to="/favorites" className="heart-icon mr-3"><FavoriteBorderOutlined fontSize="large" /></Link>
               <Link to="/login" className="profile-icon"><PersonOutlineRounded fontSize="large" /></Link>
-              <IconButton style={{marginRight: '10%'}}onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
+              <IconButton style={{marginRight: '10%'}} onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
                 <LanguageOutlined fontSize="large" className='langIcon'/>
               </IconButton>
               <Menu
