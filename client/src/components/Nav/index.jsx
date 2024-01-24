@@ -119,7 +119,7 @@ export default function Nav() {
         <ul id='menuList' className={`${isKidsHovering ? '' : 'hidden'}`}>
           <li><Link> HOODIES </Link></li>
           <li><Link> PANTS </Link></li>
-          <li><Link> SHOES</Link></li>
+          <li><Link> SHOES </Link></li>
         </ul>
       </li>
     </ul>
