@@ -1,4 +1,39 @@
-.cart {
+.shoppingBag{
+  color: white;
+}
+
+.bag{
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right:0;
+  border: 2px solid black;
+  z-index: 2;
+  width: 30%;
+  height: 50%;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.close{
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  
+}
+
+hr{
+  width: 75%;
+  margin:10px auto 20px;
+  border: 1px solid;
+}
+
+/* .cart {
   position: fixed;
   top: 0;
   right: 0;
@@ -72,4 +107,4 @@
     position: relative;
     margin: 0 auto;
   }
-}
+} */
