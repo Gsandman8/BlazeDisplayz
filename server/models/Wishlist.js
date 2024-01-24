@@ -8,18 +8,9 @@ const wishlistSchema = new Schema({
             type: Schema.Types.ObjectId,
             ref: 'Product'
         },
-        {
-            addedOn: {
-                type: Date,
-                default: Date.now
-            },
-            quantity: {
-                type: Number,
-                min: 1,
-                default: 1
-            }
-        },
-    ]
+    ],
+     addedOn: [{type: Date, default: Date.now}],
+     quantity: [{type: Number, default: 1}]
 });
 
 const Wishlist = mongoose.model('Wishlist', wishlistSchema);
