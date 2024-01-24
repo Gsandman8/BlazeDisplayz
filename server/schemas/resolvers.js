@@ -58,7 +58,7 @@ const resolvers = {
     },
     cart: async (parent, { _id }, context) => {
       if (context.user) { 
-        const user = await User.findById(context.user._id).populate({'cart'});
+        const user = await User.findById(context.user._id).populate('cart');
 
         return user.cart.id(_id);
       }
@@ -67,7 +67,7 @@ const resolvers = {
     },
     wishlist: async (parent, { _id }, context) => {
       if (context.user) { 
-        const user = await User.findById(context.user._id).populate({'wishlist'});
+        const user = await User.findById(context.user._id).populate('wishlist');
 
         return user.wishlist.id(_id);
       }
