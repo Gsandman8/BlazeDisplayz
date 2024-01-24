@@ -26,16 +26,22 @@ const typeDefs = `
     lastName: String
     email: String
     orders: [Order]
+    wishlist: Wishlist
+    cart: Cart
   }
 
   type Cart {
     _id: ID
-    products: [Product, addedOn: Date, quantity: Int] 
+    products: [Product]
+    addedOn: [String]
+    quantity: [Int] 
   }
 
   type Wishlist {
     _id: ID
-    products: [Product, addedOn: Date, quantity: Int]
+    products: [Product]
+    addedOn: [String]
+    quantity: [Int]
   }
 
   type Tag {
@@ -64,15 +70,13 @@ const typeDefs = `
 
   type Query {
     categories: [Category]
-    products(category: ID, name: String): [Product]
+    products(category: ID, name: String,, tag: String): [Product]
     product(_id: ID!): Product
     user: User
     order(_id: ID!): Order
     cart(_id: ID!): Cart
     wishlist(_id: ID!): Wishlist
     checkout(products: [ProductInput]): Checkout
-    getProductByTag(tag: String!): [Product]
-    getProductByCategory(category: String!): [Product]
   }
 
   type Mutation {
@@ -81,6 +85,7 @@ const typeDefs = `
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
+    logout: String
     addToCart(product: ID!, quantity: Int): Cart
     addToWishlist(product: ID!, quantity: Int): Wishlist
     removeFromCart(product: ID!): Cart

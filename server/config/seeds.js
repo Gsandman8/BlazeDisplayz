@@ -1,5 +1,5 @@
 const db = require('./connection');
-const { User, Product, Category } = require('../models');
+const { User, Product, Category, Tag, } = require('../models');
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
@@ -8,14 +8,29 @@ db.once('open', async () => {
   await cleanDB('User', 'users');
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Men' },
+    { name: 'Women' },
+    { name: 'Children' },
+    { name: 'New Arrivals' },
   ]);
 
   console.log('categories seeded');
+
+  const tags = await Tag.insertMany([
+    { name: 'Shirt', tagGroup: 'Clothing' },
+    { name: 'Pants', tagGroup: 'Clothing' },
+    { name: 'Shoes', tagGroup: 'Clothing' },
+    { name: 'Dresses', tagGroup: 'Clothing' },
+    { name: 'Jackets', tagGroup: 'Clothing' },
+    { name: 'Accessories', tagGroup: 'Clothing' },
+    { name: 'Hats', tagGroup: 'Clothing' },
+    { name: 'XS', tagGroup: 'Size'},
+    { name: 'Small', tagGroup: 'Size' },
+    { name: 'Medium', tagGroup: 'Size' },
+    { name: 'Large', tagGroup: 'Size' },
+    { name: 'XL', tagGroup: 'Size' },
+  ]);
+
 
   const products = await Product.insertMany([
     {
