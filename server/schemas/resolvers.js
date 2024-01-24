@@ -161,6 +161,93 @@ const resolvers = {
 
       return { token, user };
     },
+    logout: async (parent, args, context) => {
+      if (context.user) {
+        context.user = null;
+
+        return 'You have been logged out.';
+      }
+
+      throw AuthenticationError;
+    },
+    addToCart: async (parent, { _id, quantity }, context) => {
+      if(context.user) {
+        const productToAdd = await Product.findById(_id);
+        const user = await User.findByIdAndUpdate(
+          context.user._id,
+          { $addToSet: { cart: {productToAdd, quantity } }},
+          { new: true }
+        ).populate('cart');
+
+        return user.cart;
+      }
+
+      throw AuthenticationError;
+    },
+    addToWishlist: async (parent, { _id, quantity }, context) => {
+      if(context.user) {
+        const productToAdd = await Product.findById(_id);
+        const user = await User.findByIdAndUpdate(
+          context.user._id,
+          { $addToSet: { wishlist: {productToAdd, quantity }}},
+          { new: true }
+        ).populate('cart');
+
+        return user.cart;
+      }
+
+      throw AuthenticationError;
+    },
+    removeFromCart: async (parent, { _id }, context) => {
+      if(context.user) {
+        const user = await User.findByIdAndUpdate(
+          context.user._id,
+          { $pull: { cart: { _id }}},
+          { new: true }
+        ).populate('cart');
+
+        return user.cart;
+      }
+
+      throw AuthenticationError;
+    },
+    removeFromWishlist: async (parent, { _id }, context) => {
+      if(context.user) {
+        const user = await User.findByIdAndUpdate(
+          context.user._id,
+          { $pull: { wishlist: { _id }}},
+          { new: true }
+        ).populate('wishlist');
+
+        return user.wishlist;
+      }
+
+      throw AuthenticationError;
+    },
+    clearCart: async (parent, args, context) => {
+      if(context.user) {
+        const user = await User.findByIdAndUpdate(
+          context.user._id,
+          { $set: { cart: [] }},
+          { new: true }).populate('cart');
+
+        return user.cart;
+      }
+
+      throw AuthenticationError;
+    },
+    clearWishlist: async (parent, args, context) => {
+      if(context.user) {   
+      const user = await User.findByIdAndUpdate(
+          context.user._id,
+          { $set: { wishlist: [] }},
+          { new: true }).populate('wishlist');
+
+        return user.wishlist;
+      }
+
+      throw AuthenticationError;
+    }
   },
 };
 

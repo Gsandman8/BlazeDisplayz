@@ -81,6 +81,7 @@ const typeDefs = `
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
+    logout: String
     addToCart(product: ID!, quantity: Int): Cart
     addToWishlist(product: ID!, quantity: Int): Wishlist
     removeFromCart(product: ID!): Cart
