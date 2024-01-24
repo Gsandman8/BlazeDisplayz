@@ -1,7 +1,7 @@
 #navLink{
-  color: red;
+  color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 #menuList {
@@ -10,14 +10,15 @@
   list-style: none;
   position: absolute;
   top: 70%;
-  background-color: red;
+  background-color: black;
   width: 12%;
   z-index: 2;
 }
 
 #menuList a{
-  color: blue;
+  color: white;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .hidden {
