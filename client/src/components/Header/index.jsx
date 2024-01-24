@@ -27,13 +27,12 @@ export default function Header() {
           </section>
 
           <section className="col-md-4 text-center">
-            <h1>BlazeDisplayz</h1>
+            <Link to='/'><h1>BlazeDisplayz</h1></Link>
           </section>
 
           <section className="col-md-4 text-center">
             <div className="icons-container d-flex align-items-center justify-content-end">
-              {/* <Link to="/shopping-bag" className="shopping-bag-icon mr-3"><ShoppingBagOutlined fontSize="large" /></Link> */}
-              <Link to="/favorites" className="heart-icon mr-3"><FavoriteBorderOutlined fontSize="large" /></Link>
+              <Link to="/wishlist" className="heart-icon mr-3"><FavoriteBorderOutlined fontSize="large" /></Link>
               <Link to="/login" className="profile-icon"><PersonOutlineRounded fontSize="large" /></Link>
               <IconButton style={{marginRight: '10%'}} onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
                 <LanguageOutlined fontSize="large" className='langIcon'/>

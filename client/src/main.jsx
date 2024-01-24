@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import OrderHistory from './pages/OrderHistory';
 import Success from './pages/Success';
+import WishList from './pages/WishList';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,10 @@ const router = createBrowserRouter([
       }, {
         path: '/success',
         element: <Success />
-      },
+      }, {
+        path: 'WishList',
+        element: <WishList />
+      }
     ],
   },
 ]);
