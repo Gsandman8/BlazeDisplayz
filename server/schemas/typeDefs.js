@@ -66,15 +66,13 @@ const typeDefs = `
 
   type Query {
     categories: [Category]
-    products(category: ID, name: String): [Product]
+    products(category: ID, name: String,, tag: String): [Product]
     product(_id: ID!): Product
     user: User
     order(_id: ID!): Order
     cart(_id: ID!): Cart
     wishlist(_id: ID!): Wishlist
     checkout(products: [ProductInput]): Checkout
-    getProductByTag(tag: String!): [Product]
-    getProductByCategory(category: String!): [Product]
   }
 
   type Mutation {

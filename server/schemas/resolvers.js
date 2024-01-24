@@ -56,6 +56,24 @@ const resolvers = {
 
       throw AuthenticationError;
     },
+    cart: async (parent, { _id }, context) => {
+      if (context.user) { 
+        const user = await User.findById(context.user._id).populate({'cart'});
+
+        return user.cart.id(_id);
+      }
+
+      throw AuthenticationError;
+    },
+    wishlist: async (parent, { _id }, context) => {
+      if (context.user) { 
+        const user = await User.findById(context.user._id).populate({'wishlist'});
+
+        return user.wishlist.id(_id);
+      }
+
+      throw AuthenticationError;
+    },
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
       // We map through the list of products sent by the client to extract the _id of each item and create a new Order.
