@@ -26,18 +26,22 @@ const typeDefs = `
     lastName: String
     email: String
     orders: [Order]
-    wishlist: [Product, addedOn: Date, quantity: Int]
-    cart: [Product, addedOn: Date, quantity: Int]
+    wishlist: Wishlist
+    cart: Cart
   }
 
   type Cart {
     _id: ID
-    products: [Product, addedOn: Date, quantity: Int] 
+    products: [Product]
+    addedOn: [String]
+    quantity: [Int] 
   }
 
   type Wishlist {
     _id: ID
-    products: [Product, addedOn: Date, quantity: Int]
+    products: [Product]
+    addedOn: [String]
+    quantity: [Int]
   }
 
   type Tag {
