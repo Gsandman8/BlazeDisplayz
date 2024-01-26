@@ -49,8 +49,8 @@ export const QUERY_CATEGORIES = gql`
 `;
 
 export const QUERY_USER = gql`
-  {
-    user {
+  query getUser($email: String!) {
+    user(email: $email) {
       firstName
       lastName
       orders {
@@ -64,6 +64,32 @@ export const QUERY_USER = gql`
           quantity
           image
         }
+      }
+      wishlist {
+        _id
+        products {
+          _id
+          name
+          description
+          price
+          quantity
+          image
+        }
+        addedOn
+        quantity
+      }
+      cart {
+        _id
+        products {
+          _id
+          name
+          description
+          price
+          quantity
+          image
+        }
+        addedOn
+        quantity
       }
     }
   }
