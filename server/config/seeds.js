@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-const { Product, Category, Tag } = require('./models');
+const { Product, Category, Tag } = require('../models');
 const cleanDB = require('./cleanDB');
 
-mongoose.connect('mongodb://localhost/your-database-name', { useNewUrlParser: true, useUnifiedTopology: true });
+const db = require('./connection');
+
 
 async function seed() {
   await cleanDB('Category', 'categories');
