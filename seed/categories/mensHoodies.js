@@ -1,6 +1,7 @@
-const { categories, tags } = require('../../server/config/seeds');
 
-module.exports = [
+module.exports = ({ categories, tags }) => [
+
+
     //new products hoodies
     {
         name: 'Galaxy Hoodie',
@@ -175,4 +176,4 @@ module.exports = [
       },
   
   //end of hoodies
-]
+];
