@@ -1,3 +1,5 @@
+const { categories, tags } = require('../../server/config/seeds');
+
 module.exports = [
     //new products hoodies
     {

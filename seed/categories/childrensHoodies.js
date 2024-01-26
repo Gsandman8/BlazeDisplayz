@@ -1,3 +1,5 @@
+const [ categories, tags ] = require('../../server/config/seeds');
+console.log(categories)
 module.exports = [
     //start of childrens hoodies
     {

@@ -1,3 +1,5 @@
+const { categories, tags } = require('../../server/config/seeds');
+
 module.exports = [
     //start of mens shirts
 
