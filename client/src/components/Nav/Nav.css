@@ -1,7 +1,6 @@
 #navLink{
   color: white;
-  text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #menuList {
@@ -18,9 +17,61 @@
 #menuList a{
   color: white;
   font-size: 15px;
-  text-decoration: none;
 }
 
 .hidden {
   display: none;
+}
+
+.nav-container .drawer-trigger,
+.nav-container .responsive-drawer {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
+.sideBarList{
+  width: 300px;
+  margin-top: 10%;
+}
+
+.sideBarList ul{
+  margin-left: 10%;
+  list-style: none;
+  color: black;
+}
+
+.sideBarList li{
+  margin: 20px 0;
+}
+
+.sideBarList a{
+  color: black;
+  font-size: 25px;
+}
+
+.sideBarMenu a{
+  margin: auto;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .nav-container .nav-tabs-container {
+    display: none;
+  }
+
+  .nav-container .drawer-trigger {
+    display: block;
+  }
+
+  .nav-container .responsive-drawer {
+    display: block;
+  }
 }
