@@ -1,6 +1,6 @@
 
 module.exports = ({ categories, tags }) => [
-=======
+
 
     //start of chilrens shoes
 
