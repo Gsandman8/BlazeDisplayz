@@ -81,7 +81,7 @@ export default function Nav() {
   return (
     <ul className="nav nav-tabs-container">
       <li className='nav-item'>
-        <Link id='navLink' to='/newarrival' className='nav-link'>
+        <Link id='navLink' to='/newarrivals' className='nav-link'>
         NEW ARRIVAL
         </Link>
       </li>
@@ -89,7 +89,7 @@ export default function Nav() {
       onMouseEnter={() => handleMouseEnter('mens')} 
       onMouseLeave={handleMouseLeave}
       >
-        <Link id='navLink' to="/mens" className='nav-link'>
+        <Link id='navLink' to="/men" className='nav-link'>
           MENS
         </Link>
         <ul id='menuList' className={`${isMensHovering ? '' : 'hidden'}`}>
@@ -101,7 +101,7 @@ export default function Nav() {
       <li className="nav-item" 
       onMouseEnter={() => handleMouseEnter('womens')} 
       onMouseLeave={handleMouseLeave}>
-        <Link id='navLink' to="/mens" className='nav-link'>
+        <Link id='navLink' to="/women" className='nav-link'>
           WOMENS
         </Link>
         <ul id='menuList' className={`${isWomensHovering ? '' : 'hidden'}`}>

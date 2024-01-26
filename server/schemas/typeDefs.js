@@ -83,7 +83,7 @@ const typeDefs = `
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
     addOrder(products: [ID]!): Order
     updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updateProduct(_id: ID!, quantity: Int!): Product
+    updateProduct(_id: ID!, quantity: Int, description: String, price: Float ): Product
     login(email: String!, password: String!): Auth
     logout: String
     addToCart(product: ID!, quantity: Int): Cart

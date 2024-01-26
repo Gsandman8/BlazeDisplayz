@@ -11,6 +11,10 @@ import Signup from './pages/Signup';
 import OrderHistory from './pages/OrderHistory';
 import Success from './pages/Success';
 import WishList from './pages/WishList';
+import Men from './pages/Men'
+import Women from './pages/Women'
+import Kids from './pages/Kids'
+import NewArrivals from './pages/NewArrivals'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +43,18 @@ const router = createBrowserRouter([
       }, {
         path: 'WishList',
         element: <WishList />
+      }, {
+        path:'/men',
+        element: <Men/>
+      }, {
+        path:'/women',
+        element: <Women/>
+      }, {
+        path:'/kids',
+        element: <Kids/>
+      }, {
+        path:'/newarrivals',
+        element: <NewArrivals/>
       }
     ],
   },
