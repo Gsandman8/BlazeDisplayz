@@ -5,6 +5,10 @@ header{
 a{
   text-decoration: none;
 }
+.container section{
+  padding: 0;
+}
+
 section h1{
   color: white;
 }
