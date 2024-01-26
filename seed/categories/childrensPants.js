@@ -1,6 +1,7 @@
-const { categories, tags } = require('../../server/config/seeds');
 
-module.exports = [
+module.exports = ({ categories, tags }) => [
+
+
     //start of childrens pants
     {
         name: 'Prince',
