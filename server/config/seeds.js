@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-const { Product, Category, Tag } = require('../models');
+const db = require('./connection');
+
+const { User, Product, Category, Tag } = require('../models');
 const cleanDB = require('./cleanDB');
 
-const db = require('./connection');
 
 
 async function seed() {
@@ -54,8 +55,11 @@ async function seed() {
      'childrensShirts'
     ];
   for (const categoryFile of categoryFiles) {
-    const products = require(`./seed/categories/${categoryFile}`);
-    const categoryId = categories.find(cat => cat.name.toLowerCase() === 'men').id;
+    const products = require(`../../seed/categories/${categoryFile}`)({
+        categories,
+        tags
+    });
+    const categoryId = categories.find((cat) => cat.name.toLowerCase() === 'men').id;
 
     const productsWithCategory = products.map(product => ({
       ...product,

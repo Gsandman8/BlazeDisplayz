@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = ({ categories, tags }) => [
     //start of womens hoodies
 
     {

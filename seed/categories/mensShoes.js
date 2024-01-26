@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = ({ categories, tags }) => [
     //start of mens shoes
     {
         name: 'Rough Ride',
