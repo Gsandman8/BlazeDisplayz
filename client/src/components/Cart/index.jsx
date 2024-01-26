@@ -59,7 +59,7 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash" className='shoppingBag'>
-        <ShoppingCartOutlined fontSize="large"/>
+        <ShoppingCartOutlined fontSize="large" style={{cursor: 'pointer'}} />
         </span>
       </div>
     );

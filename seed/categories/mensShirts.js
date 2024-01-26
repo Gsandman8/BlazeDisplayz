@@ -1,4 +1,6 @@
+
 module.exports = ({ categories, tags }) => [
+
     //start of mens shirts
 
     {

@@ -1,4 +1,7 @@
+
 module.exports = ({ categories, tags }) => [
+
+
     //start of childrens pants
     {
         name: 'Prince',

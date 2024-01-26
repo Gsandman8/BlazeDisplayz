@@ -1,4 +1,7 @@
+
 module.exports = ({ categories, tags }) => [
+
+
     //new products hoodies
     {
         name: 'Galaxy Hoodie',
