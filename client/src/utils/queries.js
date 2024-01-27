@@ -49,10 +49,11 @@ export const QUERY_CATEGORIES = gql`
 `;
 
 export const QUERY_USER = gql`
-  query getUser($email: String!) {
-    user(email: $email) {
+  query getUser {
+    user {
       firstName
       lastName
+      email
       orders {
         _id
         purchaseDate
