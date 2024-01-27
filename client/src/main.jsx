@@ -15,6 +15,7 @@ import Men from './pages/Men'
 import Women from './pages/Women'
 import Kids from './pages/Kids'
 import NewArrivals from './pages/NewArrivals'
+import Profile from './pages/Profile'; 
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,9 @@ const router = createBrowserRouter([
       }, {
         path:'/newarrivals',
         element: <NewArrivals/>
+      }, {
+        path:'/profile',
+        element: <Profile/>
       }
     ],
   },
