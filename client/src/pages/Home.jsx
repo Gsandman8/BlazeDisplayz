@@ -17,22 +17,18 @@ export default function Home() {
         <p>FREE SHIPPING FOR CLUB MEMBERS!</p>
       </section>
 
-      <section className="container carouselContainer">
-        <div className="row justify-content-center">
-          <div className="col-md-8">
-            <Carousel>
-              <Carousel.Item>
-                <img className="d-block w-100" src={landscape} alt="First slide" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={sunset} alt="Second slide" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={sunrise} alt="Third slide" />
-              </Carousel.Item>
-            </Carousel>
-          </div>
-        </div>
+      <section className="carouselContainer">
+        <Carousel>
+          <Carousel.Item>
+            <img className="d-block w-100" src={landscape} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={sunset} alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={sunrise} alt="Third slide" />
+          </Carousel.Item>
+        </Carousel>
       </section>
 
       <section className="container mt-4">
