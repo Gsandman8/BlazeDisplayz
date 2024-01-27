@@ -13,6 +13,10 @@ section h1{
   color: white;
 }
 
+.container{
+  margin: auto;
+}
+
 .icons-container a, .langIcon{
   margin-right: 10%;
   color: white;

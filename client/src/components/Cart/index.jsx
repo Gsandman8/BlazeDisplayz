@@ -53,12 +53,12 @@ const Cart = () => {
         products: [...state.cart],
       },
     });
-  }
+  } 
 
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash" className='shoppingBag'>
+        <span role="img" aria-label="trash" className='cart'>
         <ShoppingCartOutlined fontSize="large" style={{cursor: 'pointer'}} />
         </span>
       </div>
@@ -66,41 +66,44 @@ const Cart = () => {
   }
 
   return (
-    <div className="cart bag">
-      <div className='titleContainer'>
+    <main className='cartContainer'>
+      <section className='titleContainer'>
         <h4>YOUR CART</h4>
         <div className="close" onClick={toggleCart}>
           X
         </div>
-      </div>
+      </section>
       <hr/>
       {state.cart.length ? (
-        <div>
+        <section>
           {state.cart.map((item) => (
             <CartItem key={item._id} item={item} />
           ))}
 
-          <div className="flex-row space-between">
+          <div>
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <>
+                <br/>
+                <span className='loginMsg'>log in to check out!</span>
+              </>
             )}
           </div>
-        </div>
+        </section>
       ) : (
-        <div>
+        <section>
           <h3>
             Your cart is empty!
           </h3>
           <p>Add your favorite items to your cart.</p>
           <hr/>
-          <button> Shop Now</button>
-        </div>
+          <button> Shop Now </button>
+        </section>
       )}
-    </div>
+    </main>
   );
 };
 
