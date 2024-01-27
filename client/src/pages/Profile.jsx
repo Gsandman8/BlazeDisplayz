@@ -3,11 +3,17 @@ import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../utils/queries";
 import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
+import AuthService from "../utils/auth";
 
 export default function Profile() {
   const { loading, data } = useQuery(QUERY_USER);
   const user = data?.user || {};
   console.log(user);
+
+  const handleLogout = () => {
+    AuthService.logout();
+  };
 
   return (
     <div>
@@ -28,6 +34,10 @@ export default function Profile() {
           <h4>Email</h4>
           <p>{user.email}</p>
 
+          <Button variant="contained" color="primary" onClick={handleLogout}>
+            Logout
+          </Button>
+          
         </Paper>
       </Container>
     </div>
