@@ -45,7 +45,7 @@ function ProductItem(item) {
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <p style={{color:'black', fontWeight:'bold'}}>{name}</p>
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>

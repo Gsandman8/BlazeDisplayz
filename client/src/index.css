@@ -129,6 +129,12 @@ form {
   text-align: center;
 }
 
+#imgCard {
+  width: 20%;
+  text-align: center;
+  margin: 10px;
+}
+
 .error-text {
   color: var(--error);
 }
