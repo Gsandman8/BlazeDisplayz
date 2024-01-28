@@ -22,16 +22,24 @@ export default function Signup(props) {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     
+    let hasError = false;
+
     if (formState.confirmEmail !== formState.email) {
       setConfirmEmailErr("Email doesn't match!");
+      hasError = true;
     } else{
       setConfirmEmailErr('');
     }
   
     if (formState.confirmPassword !== formState.password) {
       setConfirmPasswordErr("Password doesn't match");
+      hasError = true;
     } else{
       setConfirmPasswordErr('');
+    }
+
+    if (hasError) {
+      return;
     }
 
     try {
