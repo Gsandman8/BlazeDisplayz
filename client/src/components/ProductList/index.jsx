@@ -8,8 +8,9 @@ import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
 function ProductList() {
-  const [state, dispatch] = useStoreContext();
 
+  const [state, dispatch] = useStoreContext();
+  console.log(state);
   const { currentCategory } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
@@ -39,7 +40,7 @@ function ProductList() {
     }
 
     return state.products.filter(
-      (product) => product.category._id === currentCategory
+      (product) => product.category.name === currentCategory
     );
   }
 

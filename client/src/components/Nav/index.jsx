@@ -6,12 +6,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Nav.css';
+import { useStoreContext } from '../../utils/GlobalState';
+import { UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
 
 export default function Nav() {
   const [isMensHovering, setIsMensHovering] = useState(false);
   const [isWomensHovering, setIsWomensHovering] = useState(false);
   const [isKidsHovering, setIsKidsHovering] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [state, dispatch] = useStoreContext();
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -64,7 +67,10 @@ export default function Nav() {
         onMouseEnter={() => handleMouseEnter('mens')} 
         onMouseLeave={handleMouseLeave}
         >
-          <Link id='navLink' to="/men" className='nav-link'>
+          <Link id='navLink' to="/men" className='nav-link' onClick={()=>dispatch({
+            type: UPDATE_CURRENT_CATEGORY,
+            currentCategory: "Men"
+      })}>
             MENS
           </Link>
           <ul id='menuList' className={`${isMensHovering ? '' : 'hidden'}`}>
@@ -76,7 +82,10 @@ export default function Nav() {
         <li className="nav-item" 
         onMouseEnter={() => handleMouseEnter('womens')} 
         onMouseLeave={handleMouseLeave}>
-          <Link id='navLink' to="/women" className='nav-link'>
+          <Link id='navLink' to="/women" className='nav-link' onClick={()=>dispatch({
+            type: UPDATE_CURRENT_CATEGORY,
+            currentCategory: "Women"
+      })}>
             WOMENS
           </Link>
           <ul id='menuList' className={`${isWomensHovering ? '' : 'hidden'}`}>
@@ -88,7 +97,10 @@ export default function Nav() {
         <li className="nav-item" 
         onMouseEnter={() => handleMouseEnter('kids')} 
         onMouseLeave={handleMouseLeave}>
-          <Link id='navLink' to="/kids" className='nav-link'>
+          <Link id='navLink' to="/kids" className='nav-link' onClick={()=>dispatch({
+            type: UPDATE_CURRENT_CATEGORY,
+            currentCategory: "Children"
+      })}>
             KIDS
           </Link>
           <ul id='menuList' className={`${isKidsHovering ? '' : 'hidden'}`}>
@@ -117,7 +129,10 @@ export default function Nav() {
         <ul>
           <li><Link to='/newarrivals'>NEW ARRIVAL</Link></li>
           <li>
-            <Link to='/men'> MENS </Link>
+            <Link to='/men' onClick={()=>dispatch({
+            type: UPDATE_CURRENT_CATEGORY,
+            currentCategory: "Men"
+      })}> MENS </Link>
             <ul className='sideBarMenu'>
             <li><Link> HOODIES </Link></li>
               <li><Link> PANTS </Link></li>
@@ -125,7 +140,10 @@ export default function Nav() {
               </ul>
             </li>
           <li>
-            <Link to='/women'> WOMENS </Link>
+            <Link to='/women' onClick={()=>dispatch({
+            type: UPDATE_CURRENT_CATEGORY,
+            currentCategory: "Women"
+      })}> WOMENS </Link>
             <ul className='sideBarMenu'>
               <li><Link> HOODIES </Link></li>
               <li><Link> PANTS </Link></li>
@@ -133,7 +151,10 @@ export default function Nav() {
             </ul>
           </li>
           <li>
-            <Link to='/kid'> KIDS </Link>
+            <Link to='/kids' onClick={()=>dispatch({
+            type: UPDATE_CURRENT_CATEGORY,
+            currentCategory: "Children"
+      })}> KIDS </Link>
             <ul className='sideBarMenu'>
               <li><Link> HOODIES </Link></li>
               <li><Link> PANTS </Link></li>
