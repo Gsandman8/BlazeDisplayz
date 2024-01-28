@@ -80,13 +80,13 @@ const Cart = () => {
             <CartItem key={item._id} item={item} />
           ))}
 
-          <div>
+          <div className='totalContainer'>
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
               <>
                 <br/>
-                <button onClick={submitCheckout}>Checkout</button>
+                <button className='checkoutBtn'onClick={submitCheckout}>Checkout</button>
               </>
             ) : (
               <>
@@ -97,7 +97,7 @@ const Cart = () => {
           </div>
         </section>
       ) : (
-        <section>
+        <section className='emptyCart'>
           <h3>
             Your cart is empty!
           </h3>
