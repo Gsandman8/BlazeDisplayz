@@ -8,5 +8,61 @@
 }
 
 .qty{
-  margin-left: 10%;
+  margin-left: 22%;
+}
+
+.cartItemContainer .btn{
+  font-weight: bolder;
+}
+
+@media(max-width:1200px){
+ .qty{
+  margin-left: auto;
+  font-size: 15px;
+ }
+}
+
+@media(max-width:840px){
+  .qty{
+    margin-left: 30%;
+    font-size: 15px;
+   }
+}
+
+@media(max-width:768px) {
+  .cartItemContainer{
+    width: 425px;
+    margin-left: 40%;
+  }
+
+  section h5{
+    margin-left: 40%;
+    width: 150px;
+  }
+  
+  .cartItemContainer .card-text{
+    margin-left: 40%;
+    width: 150px;
+  }
+}
+
+@media(max-width:414px){
+  .cartItemContainer{
+    width: 380px;
+    margin-left: 0%;
+  }
+
+  section h5{
+    margin-left: 100%;
+    width: 150px;
+  }
+  
+  .cartItemContainer .card-text{
+    margin-left: 100%;
+    width: 150px;
+  }
+
+  .qty{
+    margin-left: 100%;
+  }
 }
