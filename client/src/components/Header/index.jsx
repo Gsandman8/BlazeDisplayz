@@ -33,9 +33,13 @@ export default function Header() {
 
           <section className="col-md-4 text-center">
             <div className="icons-container d-flex align-items-center justify-content-center">
-              <Link to="/wishlist" className="heart-icon mr-3"><FavoriteBorderOutlined fontSize="large" /></Link>
-              <Link to={Auth.loggedIn()?"/profile":'/login'} className="profile-icon"><PersonOutlineRounded fontSize="large" /></Link>
-              <IconButton style={{marginRight: '10%'}} onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
+              <Link to="/wishlist" className="heartIcon">
+                <FavoriteBorderOutlined fontSize="large" />
+              </Link>
+              <Link to={Auth.loggedIn()?"/profile":'/login'} className="profile-icon">
+                <PersonOutlineRounded fontSize="large" />
+              </Link>
+              <IconButton onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
                 <LanguageOutlined fontSize="large" className='langIcon'/>
               </IconButton>
               <Menu

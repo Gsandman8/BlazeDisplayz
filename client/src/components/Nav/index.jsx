@@ -4,6 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import {FavoriteBorderOutlined} from '@mui/icons-material';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Nav.css';
 import { useStoreContext } from '../../utils/GlobalState';
@@ -56,6 +57,9 @@ export default function Nav() {
       >
         <MenuIcon style={{color: 'white'}} fontSize="large"/>
       </IconButton>
+      <Link to="/wishlist" className={`heartIcon drawer-trigger ${drawerOpen ? 'hidden' : ''}`}>
+        <FavoriteBorderOutlined fontSize="large" />
+      </Link>
 
       <ul className={`nav nav-tabs-container ${drawerOpen ? 'hidden' : ''}`}>
         <li className='nav-item'>

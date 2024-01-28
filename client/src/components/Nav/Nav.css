@@ -1,4 +1,4 @@
-#navLink{
+#navLink, a{
   color: white;
   font-size: 15px;
 }
@@ -8,19 +8,19 @@
   cursor: pointer;
   list-style: none;
   position: absolute;
-  top: 70%;
+  top: 65%;
   background-color: black;
   width: 12%;
   z-index: 2;
 }
 
-#menuList a{
-  color: white;
-  font-size: 15px;
-}
-
 .hidden {
   display: none;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .nav-container .drawer-trigger,
@@ -62,6 +62,11 @@
   font-size: 20px;
 }
 
+.heartIcon{
+  color: white;
+  margin-left: 20px;
+}
+
 @media (max-width: 1200px) {
   .nav-container .nav-tabs-container {
     display: none;
@@ -73,5 +78,16 @@
 
   .nav-container .responsive-drawer {
     display: block;
+  }
+
+  .nav-container .heartIcon{
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+
+  .heartIcon{
+    margin-left: 0px;
   }
 }
