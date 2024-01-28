@@ -89,7 +89,7 @@ const resolvers = {
               description: product.description,
               images: [`${url}/images/${product.image}`],
             },
-            unit_amount: product.price * 100,
+            unit_amount: Math.floor(product.price * 100),
           },
           quantity: product.purchaseQuantity,
         });
