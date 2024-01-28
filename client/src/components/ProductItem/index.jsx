@@ -85,7 +85,7 @@ function ProductItem(item) {
         }>
           <button onClick={removeFromCart}><RemoveShoppingCartIcon/></button>
         </OverlayTrigger>
-        <OverlayTrigger
+        {/* <OverlayTrigger
         key='top'
         placement='top'
         overlay={
@@ -94,7 +94,7 @@ function ProductItem(item) {
           </Tooltip>
         }>
           <button><CardGiftcardIcon/></button>
-        </OverlayTrigger>
+        </OverlayTrigger> */}
       </nav>
     </div>
   );
