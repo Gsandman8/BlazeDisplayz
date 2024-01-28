@@ -55,10 +55,10 @@ export default function Nav() {
         onClick={handleDrawerToggle}
         className={`drawer-trigger ${drawerOpen ? 'hidden' : ''}`}
       >
-        <MenuIcon style={{color: 'white'}} fontSize="large"/>
+        <MenuIcon style={{color: 'white'}} id='icon'/>
       </IconButton>
       <Link to="/wishlist" className={`heartIcon drawer-trigger ${drawerOpen ? 'hidden' : ''}`}>
-        <FavoriteBorderOutlined fontSize="large" />
+        <FavoriteBorderOutlined id='icon' />
       </Link>
 
       <ul className={`nav nav-tabs-container ${drawerOpen ? 'hidden' : ''}`}>

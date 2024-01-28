@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.nav-tabs-container{
+  margin-top: 10px;
+}
+
 .nav-container .drawer-trigger,
 .nav-container .responsive-drawer {
   display: none;
@@ -67,6 +71,10 @@
   margin-left: 20px;
 }
 
+#icon{
+  font-size: 35px;
+}
+
 @media (max-width: 1200px) {
   .nav-container .nav-tabs-container {
     display: none;
@@ -89,5 +97,12 @@
 
   .heartIcon{
     margin-left: 0px;
+  }
+}
+
+@media(max-width:414px) {
+   nav #icon{
+    font-size: 25px;
+    margin-bottom: 20px;
   }
 }
