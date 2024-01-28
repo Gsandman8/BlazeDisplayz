@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import AuthService from "../utils/auth";
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const { loading, data } = useQuery(QUERY_USER);
@@ -34,10 +35,15 @@ export default function Profile() {
           <h4>Email</h4>
           <p>{user.email}</p>
 
-          <Button variant="contained" color="primary" onClick={handleLogout}>
+          <Button variant="contained" color="primary" onClick={handleLogout} style={{ marginRight: '5%' }}>
             Logout
           </Button>
-          
+
+          <Button variant="contained" color="primary">
+            <Link to="/orderHistory">
+              View Order History
+            </Link>
+          </Button>
         </Paper>
       </Container>
     </div>
