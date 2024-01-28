@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from '../../utils/queries';
@@ -103,7 +104,9 @@ const Cart = () => {
           </h3>
           <p>Add your favorite items to your cart.</p>
           <hr/>
-          <button> Shop Now </button>
+          <button className='newArrivalsBtn'> 
+            <Link to='/newarrivals' onClick={toggleCart} >Shop Now</Link> 
+          </button>
         </section>
       )}
     </main>
