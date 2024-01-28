@@ -13,6 +13,10 @@ export const QUERY_PRODUCTS = gql`
         _id
         name
       }
+      tags {
+        _id
+        name
+      }
     }
   }
 `;

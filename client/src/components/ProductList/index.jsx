@@ -39,6 +39,10 @@ function ProductList() {
       return state.products;
     }
 
+    if (currentCategory === 'new') {
+      return state.products.filter((product) => product.tags.includes('new'));
+    }
+
     return state.products.filter(
       (product) => product.category.name === currentCategory
     );
