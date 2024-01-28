@@ -46,6 +46,17 @@ section .loginMsg{
   justify-content: center;
 }
 
+.emptyCart .newArrivalsBtn{
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.newArrivalsBtn a{
+  margin-right: 0%;
+}
+
 @media(max-width:840px){
   .cartContainer{
     width: 80%;
@@ -95,5 +106,9 @@ section .loginMsg{
 
   .emptyCart{
     margin-left: 42%;
+  }
+
+  .emptyCart .newArrivalsBtn{
+    width: 50px;
   }
 }
