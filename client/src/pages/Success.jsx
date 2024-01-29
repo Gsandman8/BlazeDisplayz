@@ -33,7 +33,9 @@ function Success() {
     <div>
       <Jumbotron>
         <h1>Success!</h1>
-        <h2>Thank you for your purchase!</h2>
+        <h2>Thank you for shopping at BlazeDisplayz!</h2>
+        <h2>Have a BLAZIN day!!</h2>
+        <br/>
         <h2>You will now be redirected to the home page</h2>
       </Jumbotron>
     </div>
