@@ -4,9 +4,21 @@
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .newsDescription {
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .footer Button{
+    width: 70%;
+  }
 }
