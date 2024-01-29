@@ -7,8 +7,6 @@ import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import { BeatLoader } from 'react-spinners';
 import './ProductList.css';
-// import spinner from '../../assets/spinner.gif';
-
 
 function ProductList() {
 
