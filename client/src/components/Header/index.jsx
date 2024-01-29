@@ -27,16 +27,20 @@ export default function Header() {
             <Nav />
           </section>
 
-          <section className="col-md-4 text-center">
+          <section className="col-md-4">
             <Link to='/'><h1>BlazeDisplayz</h1></Link>
           </section>
 
           <section className="col-md-4 text-center">
             <div className="icons-container d-flex align-items-center justify-content-center">
-              <Link to="/wishlist" className="heart-icon mr-3"><FavoriteBorderOutlined fontSize="large" /></Link>
-              <Link to={Auth.loggedIn()?"/profile":'/login'} className="profile-icon"><PersonOutlineRounded fontSize="large" /></Link>
-              <IconButton style={{marginRight: '10%'}} onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
-                <LanguageOutlined fontSize="large" className='langIcon'/>
+              <Link to="/wishlist">
+                <FavoriteBorderOutlined className="heartIcon" id='icon'/>
+              </Link>
+              <Link to={Auth.loggedIn()?"/profile":'/login'}>
+                <PersonOutlineRounded className="profile-icon" id='icon'/>
+              </Link>
+              <IconButton onClick={handleMenuOpen} aria-controls="language-menu" aria-haspopup="true">
+                <LanguageOutlined className='langIcon'id='icon'/>
               </IconButton>
               <Menu
                 id="language-menu"

@@ -89,7 +89,7 @@ const resolvers = {
               description: product.description,
               images: [`${url}/images/${product.image}`],
             },
-            unit_amount: product.price * 100,
+            unit_amount: Math.floor(product.price * 100),
           },
           quantity: product.purchaseQuantity,
         });
@@ -184,6 +184,20 @@ const resolvers = {
 
       throw AuthenticationError;
     },
+
+//editing out the populate cart and return cart
+    // addToWishlist: async (parent, { _id, quantity }, context) => {
+    //   if(context.user) {
+    //     const productToAdd = await Product.findById(_id);
+    //     const user = await User.findByIdAndUpdate(
+    //       context.user._id,
+    //       { $addToSet: { wishlist: {productToAdd, quantity }}},
+    //       { new: true }
+    //     ).populate('cart');
+
+    //     return user.cart;
+    //   }
+
     addToWishlist: async (parent, { _id, quantity }, context) => {
       if(context.user) {
         const productToAdd = await Product.findById(_id);
@@ -191,9 +205,9 @@ const resolvers = {
           context.user._id,
           { $addToSet: { wishlist: {productToAdd, quantity }}},
           { new: true }
-        ).populate('cart');
+        ).populate('wishlist');
 
-        return user.cart;
+        return user.wishlist;
       }
 
       throw AuthenticationError;

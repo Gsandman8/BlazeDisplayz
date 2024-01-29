@@ -1,5 +1,10 @@
-.cart{
+.cart #icon{
   color: white;
+  font-size: 35px;
+}
+
+.cart-closed{
+  margin-left: 10%;
 }
 
 .cartContainer{
@@ -10,7 +15,7 @@
   right:0;
   border: 2px solid black;
   z-index: 2;
-  width: 30%;
+  width: 40%;
   height: 100%;
   overflow-y: scroll;
 }
@@ -20,7 +25,7 @@
   justify-content: center;
 }
 
-.close{
+.closeBtn{
   cursor: pointer;
   position: absolute;
   right: 10%;
@@ -31,79 +36,79 @@ hr{
   margin:10px auto 20px;
   border: 1px solid;
 }
-
-/* .cart {
-  position: fixed;
-  top: 0;
-  right: 0;
-  min-width: 20%;
-  max-width: 30%;
-  max-height: 60%;
-  background-color: var(--light);
-  overflow: auto;
-  padding: .5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-  border-bottom-left-radius: .5rem;
+section strong{
+  display: flex;
+  justify-content: center;
 }
 
-.cart h2 {
-  font-size: 1.5rem;
-  border-bottom: 1px solid var(--dark);
-  padding-bottom: .5rem;
-  margin: 1rem 0;
+section .loginMsg{
+  display: flex;
+  justify-content: center;
 }
 
-.cart .close {
-  position: absolute;
-  top: .5rem;
-  right: .5rem;
-  cursor: pointer;
-  color: var(--tertiary);
+.emptyCart .newArrivalsBtn{
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
 }
 
-.cart .close:hover {
-  text-decoration: underline;
+.newArrivalsBtn a{
+  margin-right: 0%;
 }
 
-.cart-closed {
-  position: fixed;
-  top: 2%;
-  right: 1%;
-  font-size: 2rem;
-  cursor: pointer;
-  background-color: var(--secondary);
-  border-radius: 50%;
-  padding: .25rem;
-  width: 50px;
-  height: 50px;
+@media(max-width:840px){
+  .cartContainer{
+    width: 80%;
+  }
 }
 
-.cart-closed:hover {
-  transform: rotate(8deg);
-}
-
-.cart img {
-  width: 70px;
-  margin-right: 1rem;
-}
-
-.cart input {
-  width: 50px;
-  padding: 0;
-  margin: 0 .5rem 1rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .cart {
-    position: relative;
-    max-width: 100%;
-    max-height: auto;
-    box-shadow: none;
-    background-color: inherit;
+@media (max-width:768px){
+  .cart-closed{
+    margin-left: 0;
   }
 
-  .cart-closed {
-    position: relative;
-    margin: 0 auto;
+  .titleContainer h4{
+    margin-left: 400px;
   }
-} */
+
+  section .totalContainer{
+    margin-left: 125px;
+    width: 300px;
+  }
+
+  .emptyCart{
+    margin-left: 33%;
+  }
+  
+}
+
+@media(max-width:650px) {
+  .cartContainer{
+    width: 100%;
+  }
+}
+
+@media(max-width:414px){
+
+  .cart #icon{
+    font-size: 25px;
+  }
+  
+  .titleContainer h4{
+    margin-right: 80px;
+  }
+
+  section .totalContainer{
+    margin-left: 140px;
+    width: 105px;
+  }
+
+  .emptyCart{
+    margin-left: 42%;
+  }
+
+  .emptyCart .newArrivalsBtn{
+    width: 50px;
+  }
+}

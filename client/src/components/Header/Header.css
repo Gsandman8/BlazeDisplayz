@@ -5,16 +5,13 @@ header{
 a{
   text-decoration: none;
 }
+
 .container section{
   padding: 0;
 }
 
 section h1{
   color: white;
-}
-
-.container{
-  margin: auto;
 }
 
 .icons-container a, .langIcon{
@@ -24,4 +21,57 @@ section h1{
 
 .icons-container{
   margin-left: 15%;
+}
+
+.icons-container #icon{
+  font-size: 35px;
+}
+
+a h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px){
+  .icons-container .heartIcon {
+    display: none;
+  }
+}
+
+@media(max-width:768px){
+  .container section{
+    padding: 0;
+  }
+
+  .row section{
+    width: 33%;
+  }
+
+  .profile-icon, .icons-container a{
+    margin-right: 0;
+  }
+
+  .icons-container{
+    margin-left: 50%;
+  }
+}
+
+@media(max-width:414px) {
+  .row section{
+    width: 20%;
+  }
+
+  a h1{
+    font-size: 25px;
+    margin-left: 120px;
+  }
+
+  .icons-container{
+    margin-left: 185px;
+  }
+
+  .icons-container #icon{
+    font-size: 25px;
+  }
 }

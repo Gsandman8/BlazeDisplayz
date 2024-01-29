@@ -68,7 +68,7 @@ function ProductItem(item) {
           alt={name}
           src={`/images/${image}`}
         />
-        
+        <p style={{color:'black', fontWeight:'bold'}}>{name}</p>
       </Link>
       <div>
         <div> Only {quantity} {pluralize("item", quantity)} left!</div>

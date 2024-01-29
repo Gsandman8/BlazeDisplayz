@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from '../../utils/queries';
@@ -58,8 +59,8 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash" className='cart'>
-        <ShoppingCartOutlined fontSize="large" style={{cursor: 'pointer'}} />
+        <span className='cart'>
+        <ShoppingCartOutlined id='icon' style={{cursor: 'pointer'}} />
         </span>
       </div>
     );
@@ -69,7 +70,7 @@ const Cart = () => {
     <main className='cartContainer'>
       <section className='titleContainer'>
         <h4>YOUR CART</h4>
-        <div className="close" onClick={toggleCart}>
+        <div className="closeBtn" onClick={toggleCart}>
           X
         </div>
       </section>
@@ -80,11 +81,14 @@ const Cart = () => {
             <CartItem key={item._id} item={item} />
           ))}
 
-          <div>
+          <div className='totalContainer'>
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
+              <>
+                <br/>
+                <button className='checkoutBtn'onClick={submitCheckout}>Checkout</button>
+              </>
             ) : (
               <>
                 <br/>
@@ -94,13 +98,15 @@ const Cart = () => {
           </div>
         </section>
       ) : (
-        <section>
+        <section className='emptyCart'>
           <h3>
             Your cart is empty!
           </h3>
           <p>Add your favorite items to your cart.</p>
           <hr/>
-          <button> Shop Now </button>
+          <button className='newArrivalsBtn'> 
+            <Link to='/newarrivals' onClick={toggleCart} >Shop Now</Link> 
+          </button>
         </section>
       )}
     </main>
