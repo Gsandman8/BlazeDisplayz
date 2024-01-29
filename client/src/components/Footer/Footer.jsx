@@ -15,7 +15,7 @@ export default function Footer() {
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <Typography color='white' style={{ marginBottom: '3%'}} >
-              Newsletter Signup
+              <h3>Newsletter Signup:</h3>
             </Typography>
             <p className='newsDescription'>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
             <TextField
@@ -30,36 +30,54 @@ export default function Footer() {
 
           <Grid item xs={4}>
             <Typography color='white'>
-              Need Help?
+              <h3>Need Help?</h3>
             </Typography>
             <div style={{ marginTop: '5%' }}>
-              <Button variant='outlined' style={{ marginLeft: '18px', color: 'white', borderColor: 'white' }}>Example 1</Button>
-              <Button variant='outlined' style={{ marginLeft: '8px', color: 'white', borderColor: 'white' }}>Example 2</Button>
-              <Button variant='outlined' style={{ marginLeft: '19px', marginTop: '15px', color: 'white', borderColor: 'white' }}>Example 3</Button>
-              <Button variant='outlined' style={{ marginTop: '15px', marginLeft: '8px', color: 'white', borderColor: 'white' }}>Example 4</Button>
+
+              <Button variant='outlined' sx={{marginLeft:'18px', color: 'white', borderColor: 'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}} >
+                Find Order
+              </Button>
+
+              <Button variant='outlined' sx={{ marginLeft: '8px', color: 'white', borderColor: 'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}}>
+                Contact Us
+              </Button>
+
+              <Button variant='outlined' sx={{ marginLeft: '19px', marginTop: '15px', color: 'white', borderColor:'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}}>
+              Accessibility
+              </Button>
+
+              <Button variant='outlined' sx={{ marginTop: '15px', marginLeft: '8px', color: 'white', borderColor:'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}}>
+                Feedback
+              </Button>
+
             </div>
           </Grid>
 
           <Grid item xs={4}>
             <Typography color='white'>
-              More Info
+              <h3>More Info:</h3>
             </Typography>
+
             <Grid container spacing={1}  style={{ marginTop: '3%' }}>
+              
               <Grid item xs={6}>
-                <Link href="#" style={{ color: 'white' }}>Random Text 1</Link>
+                <Link href="#" underline='hover' style={{ color: 'white', fontSize:'113%' }}>Gift Cards</Link>
                 <br />
-                <Link href="#" style={{ color: 'white' }}>Random Text 2</Link>
+                <Link href="#" underline='hover' style={{ color: 'white', fontSize:'113%' }}>Find a Store</Link>
                 <br />
-                <Link href="#" style={{ color: 'white' }}>Random Text 3</Link>
+                <Link href="#" underline='hover' style={{ color: 'white', fontSize:'113%' }}>Careers</Link>
               </Grid>
+
               <Grid item xs={6}>
-                <Link href="#" style={{ color: 'white' }}>Random Text 4</Link>
+                <Link href="#" underline='hover' style={{ color: 'white', fontSize:'113%' }}>Events</Link>
                 <br />
-                <Link href="#" style={{ color: 'white' }}>Random Text 5</Link>
+                <Link href="#" underline='hover' style={{ color: 'white', fontSize:'113%' }}>Privacy Policy</Link>
                 <br />
-                <Link href="#" style={{ color: 'white' }}>Random Text 6</Link>
+                <Link href="#" underline='hover' style={{ color: 'white', fontSize:'113%' }}>Worn Wear</Link>
               </Grid>
+              
             </Grid>
+
           </Grid>
         </Grid>
       </Container>
