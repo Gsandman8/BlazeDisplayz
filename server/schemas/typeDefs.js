@@ -12,6 +12,7 @@ const typeDefs = `
     quantity: Int
     price: Float
     category: Category
+    tags: [Tag]
   }
 
   type Order {

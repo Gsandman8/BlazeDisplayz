@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
-import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+import { ADD_TO_CART, UPDATE_CART_QUANTITY, REMOVE_FROM_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
+import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
+import Tooltip from 'react-bootstrap/Tooltip'; 
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import { useState } from 'react';
+
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -38,9 +45,25 @@ function ProductItem(item) {
     }
   }
 
+  const removeFromCart = () => {
+    dispatch({
+      type: REMOVE_FROM_CART,
+      _id: _id
+    });
+    idbPromise('cart', 'delete', { ...item });
+  }
+
+  const onHover = () => {
+    console.log("hover")
+  }
+
   return (
-    <div className="card px-1 py-1">
+    <div>
+    <div className="card px-1 py-1" style={{border:"white",borderBottom:"black "}}>
       <Link to={`/products/${_id}`}>
+        <div className="card-header" style={{backgroundColor:"white", color:"black", border:"black"}}>
+      <h2 style={{color:"black"}}>{name}</h2>
+      </div>
         <img
           alt={name}
           src={`/images/${image}`}
@@ -48,10 +71,44 @@ function ProductItem(item) {
         <p style={{color:'black', fontWeight:'bold'}}>{name}</p>
       </Link>
       <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
+        <div> Only {quantity} {pluralize("item", quantity)} left!</div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <nav className="justify-space-between">
+      <OverlayTrigger
+        key='top'
+        placement='top'
+        overlay={
+          <Tooltip id={`tooltip-top`}>
+            Add to Cart
+          </Tooltip>
+        }>
+          <button style={{border:"none", backgroundColor:"white"}} onClick={addToCart}><AddShoppingCartIcon/></button>
+        </OverlayTrigger>
+        <OverlayTrigger
+        key='top'
+        placement='top'
+        overlay={
+          <Tooltip id={`tooltip-top`}>
+            Remove from Cart
+          </Tooltip>
+        }>
+          <button style={{border:"none", backgroundColor:"white"}} onClick={removeFromCart}><RemoveShoppingCartIcon/></button>
+        </OverlayTrigger>
+        {/* <OverlayTrigger
+        key='top'
+        placement='top'
+        overlay={
+          <Tooltip id={`tooltip-top`}>
+            Add to Wishlist
+          </Tooltip>
+        }>
+          <button><CardGiftcardIcon/></button>
+        </OverlayTrigger> */}
+      </nav>
+    <br/>
+    <br/>
+    </div>
     </div>
   );
 }

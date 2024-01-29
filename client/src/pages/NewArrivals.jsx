@@ -4,8 +4,9 @@ import ProductList from '../components/ProductList';
 
 const NewArrivals = () => {
     return (
-        <div>
-            <h1>NewArrivals</h1>
+        <div className="container row">
+            <h1 className="text-center">New Arrivals!</h1>
+            
             <ProductList />
         </div>
     )}

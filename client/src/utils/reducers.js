@@ -7,7 +7,8 @@ import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
   CLEAR_CART,
-  TOGGLE_CART
+  TOGGLE_CART,
+  UPDATE_CURRENT_TAG
 } from "./actions";
 
 export const reducer = (state, action) => {
@@ -77,7 +78,13 @@ export const reducer = (state, action) => {
       return {
         ...state,
         currentCategory: action.currentCategory
-      }
+      };
+
+    case UPDATE_CURRENT_TAG:
+      return {
+        ...state,
+        currentTag: action.currentTag
+      };
 
     default:
       return state;

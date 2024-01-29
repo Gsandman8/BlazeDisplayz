@@ -7,11 +7,12 @@ import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
+
 function ProductList() {
 
   const [state, dispatch] = useStoreContext();
   console.log(state);
-  const { currentCategory } = state;
+  const { currentCategory, currentTag } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
@@ -35,10 +36,20 @@ function ProductList() {
   }, [data, loading, dispatch]);
 
   function filterProducts() {
-    if (!currentCategory) {
+    if (!currentCategory && !currentTag) {
       return state.products;
     }
 
+    if (currentTag === 'new') {
+      return state.products.filter((product) => product.tags[1].name === currentTag);
+    }
+    if (currentTag === 'Clothing') {
+      return state.products.filter((product) => product.category.name === currentCategory);
+    }
+    if (currentTag && currentCategory) {
+      let productsToFilter = state.products.filter(product => product.category.name === currentCategory);
+      return productsToFilter.filter(product => product.tags[0].name === currentTag);
+    }
     return state.products.filter(
       (product) => product.category.name === currentCategory
     );
@@ -46,7 +57,6 @@ function ProductList() {
 
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
