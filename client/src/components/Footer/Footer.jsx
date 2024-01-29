@@ -18,14 +18,16 @@ export default function Footer() {
               <h3>Newsletter Signup:</h3>
             </Typography>
             <p className='newsDescription'>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
-            <TextField
-              id="standard-basic"
-              label="Email"
-              variant="standard"
-              className='textfield'
-              InputLabelProps={{ style: { color: 'white' } }}
-              inputProps={{ style: { color: 'white', borderBottom: '3px solid white'} }}
-            />
+            <form>
+              <TextField
+                id="standard-basic"
+                label="Email"
+                variant="standard"
+                className='textfield'
+                InputLabelProps={{ style: { color: 'white' } }}
+                inputProps={{ style: { color: 'white', borderBottom: '3px solid white'} }}
+              />
+            </form>  
           </Grid>
 
           <Grid item xs={4}>
@@ -34,19 +36,54 @@ export default function Footer() {
             </Typography>
             <div style={{ marginTop: '5%' }}>
 
-              <Button variant='outlined' sx={{marginLeft:'18px', color: 'white', borderColor: 'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}} >
+              <Button variant='outlined' 
+              sx={{marginLeft:'18px', 
+              color: 'white', 
+              borderColor: 'white', 
+              '&:hover': 
+              {backgroundColor: 
+              'white',color: 'black', 
+              borderColor: 'black'}}} 
+              >
                 Find Order
               </Button>
 
-              <Button variant='outlined' sx={{ marginLeft: '8px', color: 'white', borderColor: 'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}}>
+              <Button variant='outlined' 
+              sx={{ marginLeft: '8px', 
+              color: 'white', 
+              borderColor: 'white', 
+              '&:hover': 
+              {backgroundColor: 'white',
+              color: 'black',
+               borderColor: 'black'}}}
+               >
                 Contact Us
               </Button>
 
-              <Button variant='outlined' sx={{ marginLeft: '19px', marginTop: '15px', color: 'white', borderColor:'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}}>
+              <Button variant='outlined'
+              sx={{ marginLeft: '19px', 
+              marginTop: '15px', 
+              color: 'white', 
+              borderColor:'white', 
+              '&:hover': 
+              {backgroundColor: 
+              'white',color: 
+              'black', borderColor: 
+              'black'}}}
+              >
               Accessibility
               </Button>
 
-              <Button variant='outlined' sx={{ marginTop: '15px', marginLeft: '8px', color: 'white', borderColor:'white', '&:hover': {backgroundColor: 'white',color: 'black', borderColor: 'black'}}}>
+              <Button variant='outlined' 
+              sx={{ marginTop: '15px', 
+              marginLeft: '8px', 
+              color: 'white', 
+              borderColor:'white', 
+              '&:hover': 
+              {backgroundColor: 'white',
+              color: 'black', 
+              borderColor: 'black'}}}
+              >
                 Feedback
               </Button>
 
