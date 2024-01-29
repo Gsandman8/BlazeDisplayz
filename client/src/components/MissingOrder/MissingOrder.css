@@ -16,3 +16,28 @@
   font-size: 15px;
   margin-top: 17px;
 }
+
+@media screen and (max-width: 768px) {
+  .MissingOrder {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .MissingOrder {
+    width: 45%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .MissingOrder {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .MissingOrder {
+    width: 53%;
+  }
+}
