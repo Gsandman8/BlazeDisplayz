@@ -5,8 +5,8 @@ import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-import spinner from '../../assets/spinner.gif';
-
+import { BeatLoader } from 'react-spinners';
+import './ProductList.css';
 
 function ProductList() {
 
@@ -73,7 +73,11 @@ function ProductList() {
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
+      {loading ? 
+        <div className="loaderContainer">
+          <BeatLoader color={'orange'} height={4} width={150} />
+        </div> 
+        : null}
     </div>
   );
 }
