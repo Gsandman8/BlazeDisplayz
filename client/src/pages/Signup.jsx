@@ -32,7 +32,7 @@ export default function Signup(props) {
     }
   
     if (formState.confirmPassword !== formState.password) {
-      setConfirmPasswordErr("Password doesn't match");
+      setConfirmPasswordErr("Password doesn't match!");
       hasError = true;
     } else{
       setConfirmPasswordErr('');
@@ -70,8 +70,8 @@ export default function Signup(props) {
   return (
   <main className='container createAccContainer'>
     <div className='row'>
-      <section className="col-md-6">
-        <Link to="/login">← Go to Login</Link>
+      <section className="col">
+        <Link to="/login" className='goToLogin'>← Go to Login</Link>
         <h2> Create an Account</h2>
         <form onSubmit={handleFormSubmit}>
           <TextField
@@ -119,7 +119,7 @@ export default function Signup(props) {
             style={{marginBottom:'10px'}}           
           />
           
-          {confirmEmailErr &&  <p style={{ color: 'red' }}>{confirmEmailErr}</p>}
+          {confirmEmailErr &&  <p className='errMsg'>{confirmEmailErr}</p>}
         
           <TextField
             placeholder="********"
@@ -144,14 +144,16 @@ export default function Signup(props) {
             style={{marginBottom:'10px'}}
           />
           
-          {confirmPasswordErr && <p style={{ color: 'red' }}>{confirmPasswordErr}</p>}
+          {confirmPasswordErr && <p className='errMsg'>{confirmPasswordErr}</p>}
         
-          <button type="submit">Create Account </button>   
+          <button className='createBtn'type="submit">Create Account </button>   
         </form>
       </section>
 
-      <section className="col-md-6">
-          <MissingOrder/>
+      <section>
+          <div className='missingOrderContainer'>
+            <MissingOrder/>
+          </div>
       </section>
     </div>
   </main>

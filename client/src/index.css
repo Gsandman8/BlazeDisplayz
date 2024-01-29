@@ -11,7 +11,7 @@ html,
 body {
   min-height: 100%;
 }
-
+/* home page*/
 .banner{
   width: 100%;
   height: 10%;
@@ -26,13 +26,17 @@ body {
   color: white;
 }
 
+/* end */
+
 section h2, img{
   margin-bottom: 10px;
 }
 
+/* sign up page */
+
 .createAccContainer{
   padding: 25px;
-  margin: 30px;
+  margin-top:30px;
 }
 
 .createAccContainer form{
@@ -42,6 +46,51 @@ section h2, img{
 .createAccContainer input{
   border-bottom: solid 2px ;
 }
+
+.missingOrderContainer{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.goToLogin{
+  color: black;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.errMsg{
+  color: #ff6347;
+  width: 35%;
+  border: 2px solid #ff6347;
+  border-image: linear-gradient(to right, #ff6347, #ff8c7a);
+  border-image-slice: 1;
+  padding: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.createBtn{
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: #BF3131;
+ &:hover{
+  filter: brightness(80%);
+ } 
+}
+
+/* end */
 
 body {
   margin: 0;
