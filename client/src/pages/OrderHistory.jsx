@@ -14,8 +14,16 @@ function OrderHistory() {
   return (
     <>
       <div className="container my-1">
-        <Link to="/profile" style={{fontSize:'105%', color:'black'}}>← Back to Profile</Link>
-
+        <Link to="/profile" style={{color: 'black', textDecoration: 'none', fontSize: '17px'
+          }} onMouseEnter={(e) => {
+            e.target.style.borderBottom = '2px solid black';
+          }}  onMouseLeave={(e) => {
+            e.target.style.borderBottom = '1px solid transparent';
+          }}
+          >
+          ← Back to Profile
+        </Link>
+        
         {user ? (
           <>
             <h2>
