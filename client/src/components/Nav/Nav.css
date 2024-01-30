@@ -34,11 +34,16 @@
 
 .close-button {
   position: absolute;
-  top: 2%;
+  margin-top: 10px;
   left: 5%;
   cursor: pointer;
   width: 10px;
   height: 10px;
+}
+
+.sideBarContainer{
+  background-image: linear-gradient(to top,#732c7b, #36409e);
+  height: 100%;
 }
 
 .sideBarList{
@@ -57,7 +62,7 @@
 }
 
 .sideBarList a{
-  color: black;
+  color: white;
   font-size: 25px;
 }
 
