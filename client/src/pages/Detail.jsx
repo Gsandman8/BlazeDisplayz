@@ -109,7 +109,7 @@ function Detail() {
           </p>
           <Link to={`/${currentCategory}`} ><p style={{color:"black"}}>← Back to Products</p></Link>
 
-          <img className='border border-dark' style={{position: "relative", left:"50px", top:"100px"}} src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
+          <img className='border border-dark' style={{position: "relative", left:"90px", top:"100px"}} src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
           </div>
           <div className="col-6">
           <img

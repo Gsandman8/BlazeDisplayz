@@ -85,7 +85,7 @@ function ProductItem(item) {
           <button style={{border:"none", backgroundColor:"white"}} onClick={addToCart}><AddShoppingCartIcon/></button>
         </OverlayTrigger>
         <OverlayTrigger
-        key='top'
+        key='top1'
         placement='top'
         overlay={
           <Tooltip id={`tooltip-top`}>

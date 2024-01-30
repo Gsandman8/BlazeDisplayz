@@ -15,11 +15,12 @@ export default function Footer() {
   const form = useRef();
 
   return (
+    <div>
     <footer className="footer">
       <Container align="center" >
         <Grid container spacing={2}>
           <Grid item xs={4}>
-            <Typography color='white' style={{ marginBottom: '3%'}} >
+            <Typography component="span" color='white' style={{ marginBottom: '3%'}} >
               <h3>Newsletter Signup:</h3>
             </Typography>
             <p className='newsDescription'>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
@@ -52,7 +53,7 @@ export default function Footer() {
           </Grid>
 
           <Grid item xs={4}>
-            <Typography color='white'>
+            <Typography component="span" color='white'>
               <h3>Need Help?</h3>
             </Typography>
             <div style={{ marginTop: '5%' }}>
@@ -112,7 +113,7 @@ export default function Footer() {
           </Grid>
 
           <Grid item xs={4}>
-            <Typography color='white'>
+            <Typography component="span" color='white'>
               <h3>More Info:</h3>
             </Typography>
 
@@ -140,5 +141,6 @@ export default function Footer() {
         </Grid>
       </Container>
     </footer>
+    </div>
   );
 }
