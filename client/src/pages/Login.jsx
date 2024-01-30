@@ -65,7 +65,7 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1" style={{paddingBottom:'115px'}}>
+    <div className="container my-1" style={{paddingBottom:'120px'}}>
       <h2 style={{marginTop: '4%'}}>Login</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
@@ -103,7 +103,20 @@ function Login(props) {
           </div>
         ) : null} */}
         <div className="flex-row">
-          <Button type="submit" variant="contained" sx={{marginRight:'80%', backgroundColor: '#36409e', color: 'white', fontSize: '17px', marginTop: '5%', borderRadius: '20px', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#2c2f70' } }}>
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{
+              marginRight: '80%',
+              backgroundImage: 'linear-gradient(to top, #732c7b, #36409e)',
+              color: 'white',
+              fontSize: '17px',
+              marginTop: '5%',
+              borderRadius: '20px',
+              '&:hover': {
+              filter: 'brightness(80%)',
+              backgroundColor: '#2c2f70'}}}
+            >
             Submit
           </Button>
         </div>
