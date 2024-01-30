@@ -104,12 +104,12 @@ body {
 
 header {
   background: black;
-  background-image: linear-gradient(to top,#BF3131, #7D0A0A);
+  background-image: linear-gradient(to top,#732c7b, #36409e);
   /* background-image: linear-gradient(to top, yellow, orange, orangered, red, darkred); */
 }
 
 footer{
-  background-image: linear-gradient(to bottom, #BF3131, #7D0A0A);
+  background-image: linear-gradient(to bottom, #522357, #2c2f70);
 }
 
 img {
