@@ -66,9 +66,9 @@ export default function Nav() {
       >
         <MenuIcon style={{color: 'white'}} id='icon'/>
       </IconButton>
-      <Link to="/wishlist" className={`heartIcon drawer-trigger ${drawerOpen ? 'hidden' : ''}`}>
+      {/* <Link to="/wishlist" className={`heartIcon drawer-trigger ${drawerOpen ? 'hidden' : ''}`}>
         <FavoriteBorderOutlined id='icon' />
-      </Link>
+      </Link> */}
 
       <ul className={`nav nav-tabs-container ${drawerOpen ? 'hidden' : ''}`}>
         <li className='nav-item'>
