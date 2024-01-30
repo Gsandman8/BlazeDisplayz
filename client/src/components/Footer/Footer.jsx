@@ -57,7 +57,7 @@ export default function Footer() {
             </Typography>
             <div style={{ marginTop: '5%' }}>
 
-              <Button variant='outlined' 
+              <Button className='findOrderBtn'variant='outlined' 
               sx={{marginLeft:'18px', 
               color: 'white', 
               borderColor: 'white', 
