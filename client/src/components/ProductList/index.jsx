@@ -75,7 +75,7 @@ function ProductList() {
       )}
       {loading ? 
         <div className="loaderContainer">
-          <BeatLoader color={'orange'} height={4} width={150} />
+          <BeatLoader color={'#732c7b'} height={4} width={150} />
         </div> 
         : null}
     </div>

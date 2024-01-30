@@ -24,6 +24,8 @@ body {
 .banner p{
   margin: 0;
   color: white;
+  font-family: 'Rubik', sans-serif;
+
 }
 
 /* end */
@@ -41,16 +43,10 @@ section h2, img{
 
 .createAccContainer form{
   margin: 10px;
-  &:hover{
-    color: black;
-  }
 }
 
-.createAccContainer input{
-  border-bottom: solid 2px ;
-  &:hover{
-    border-bottom: solid 2.5px black;
-  }
+.createAccContainer input:hover .MuiInput-underline:before {
+  border-bottom: 2px solid #000;
 }
 
 .missingOrderContainer{
@@ -92,7 +88,7 @@ section h2, img{
   border-radius: 20px;
   color: white;
   border: none;
-  background-color: #BF3131;
+  background-image: linear-gradient(to top,#732c7b, #36409e);
  &:hover{
   filter: brightness(80%);
  } 
