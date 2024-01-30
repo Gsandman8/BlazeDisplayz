@@ -13,7 +13,6 @@
   position: fixed;
   top: 0;
   right:0;
-  border: 2px solid black;
   z-index: 2;
   width: 40%;
   height: 100%;
@@ -29,6 +28,7 @@
   cursor: pointer;
   position: absolute;
   right: 10%;
+  font-weight: bold;
 }
 
 hr{
@@ -41,20 +41,33 @@ section strong{
   justify-content: center;
 }
 
-section .loginMsg{
-  display: flex;
-  justify-content: center;
-}
-
-.emptyCart .newArrivalsBtn{
-  background-color: black;
+.loginAndArrivalBtn{
+  background-image: linear-gradient(to top,#732c7b, #36409e);
+  font-size: 17px;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
   border: none;
-  border-radius: 10px;
   width: 50%;
+  &:hover{
+    filter: brightness(80%);
+  }
 }
 
 .newArrivalsBtn a{
   margin-right: 0%;
+}
+
+.checkoutBtn{
+  border: none;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
+  background-image: linear-gradient(to top,#732c7b, #36409e);
+  color: white;
+  &:hover{
+    filter: brightness(80%);
+  }
 }
 
 @media(max-width:840px){
@@ -69,7 +82,7 @@ section .loginMsg{
   }
 
   .titleContainer h4{
-    margin-left: 400px;
+    margin-left: 390px;
   }
 
   section .totalContainer{
@@ -83,9 +96,19 @@ section .loginMsg{
   
 }
 
+@media(max-width:700px) {
+  .titleContainer h4{
+    margin-right: 40px;
+  }
+}
+
 @media(max-width:650px) {
   .cartContainer{
     width: 100%;
+  }
+
+  .titleContainer h4{
+    margin-right: -20px;
   }
 }
 
@@ -93,10 +116,36 @@ section .loginMsg{
   .cart #icon{
     font-size: 25px;
   }
+
+  .titleContainer h4{
+    margin-right: 10px;
+  }
+}
+
+@media(max-width:550px){
+  .titleContainer h4{
+    margin-right: 40px;
+  }
+}
+
+@media(max-width:500px){
+  .titleContainer h4{
+    margin-right: 70px;
+  }
+
+  section .totalContainer{
+    margin-left: 180px;
+    width: 105px;
+  }
+}
+
+@media(max-width:450px){
+  .titleContainer h4{
+    margin-right: 120px;
+  }
 }
 
 @media(max-width:414px){
-
   .cart #icon{
     font-size: 25px;
   }
@@ -111,10 +160,12 @@ section .loginMsg{
   }
 
   .emptyCart{
-    margin-left: 42%;
+    margin-left: 40%;
   }
 
   .emptyCart .newArrivalsBtn{
-    width: 50px;
+    width: 100px;
+    position: absolute;
+    right: 160px;
   }
 }

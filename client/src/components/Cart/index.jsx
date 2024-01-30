@@ -92,7 +92,11 @@ const Cart = () => {
             ) : (
               <>
                 <br/>
-                <span className='loginMsg'>log in to check out!</span>
+                <Link to='/login' onClick={toggleCart}>
+                  <button className='loginAndArrivalBtn'>
+                    log in to check out!
+                  </button>
+                </Link>
               </>
             )}
           </div>
@@ -104,9 +108,12 @@ const Cart = () => {
           </h3>
           <p>Add your favorite items to your cart.</p>
           <hr/>
-          <button className='newArrivalsBtn'> 
-            <Link to='/newarrivals' onClick={toggleCart} >Shop Now</Link> 
-          </button>
+          <Link to='/newarrivals' onClick={toggleCart} >
+            <button className='loginAndArrivalBtn newArrivalsBtn'> 
+              Shop Now
+            </button>
+          </Link> 
+
         </section>
       )}
     </main>

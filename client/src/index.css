@@ -11,22 +11,6 @@ html,
 body {
   min-height: 100%;
 }
-/* home page*/
-.banner{
-  width: 100%;
-  background-image: linear-gradient(to bottom,rgb(221, 221, 221), grey);
-  margin: 0;
-  text-align: center;
-}
-
-.banner p{
-  margin: 0;
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  padding: 1%;
-}
-
-/* end */
 
 section h2, img{
   margin-bottom: 10px;
