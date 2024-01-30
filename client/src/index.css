@@ -216,3 +216,9 @@ form {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .Profile Button {
+    margin: 2%;
+  }
+}
