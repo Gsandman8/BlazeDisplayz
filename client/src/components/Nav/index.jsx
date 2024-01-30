@@ -130,65 +130,67 @@ export default function Nav() {
         onClose={handleDrawerToggle}
         className="responsive-drawer"
       >
-        <IconButton
-          className="close-button"
-          onClick={handleDrawerToggle}
-          aria-label="close"
-        >
-          <CloseIcon fontSize="large"/>
-        </IconButton>
+        <div className='sideBarContainer'>
+          <IconButton
+            className="close-button"
+            onClick={handleDrawerToggle}
+            aria-label="close"
+          >
+            <CloseIcon fontSize="large" style={{color:'white', marginTop:'20px'}}/>
+          </IconButton>
 
-        <section className='sideBarList'>
-          <ul>
-            <li>
-              <Link 
-              to='/newarrivals' 
-              onClick={() => handleDrawerLinkClick('New Arrivals')}
-              >
-                NEW ARRIVAL
-              </Link>
-            </li>
-            <li>
-              <Link 
-              to='/men' 
-              onClick={() => handleDrawerLinkClick('Men')}
-              >
-                MENS
-              </Link>
-              {/* <ul className='sideBarMenu'>
-                <li><Link> HOODIES </Link></li>
-                <li><Link> PANTS </Link></li>
-                <li><Link> SHOES </Link></li>
-              </ul> */}
-            </li>
-            <li>
-              <Link 
-              to='/women' 
-              onClick={() => handleDrawerLinkClick('Women')}
-              >
-                WOMENS
-              </Link>
-              {/* <ul className='sideBarMenu'>
-                <li><Link> HOODIES </Link></li>
-                <li><Link> PANTS </Link></li>
-                <li><Link> SHOES </Link></li>
-              </ul> */}
-            </li>
-            <li>
-              <Link 
-              to='/kids' 
-              onClick={() => handleDrawerLinkClick('Children')}
-              >
-                KIDS
-              </Link>
-              {/* <ul className='sideBarMenu'>
-                <li><Link> HOODIES </Link></li>
-                <li><Link> PANTS </Link></li>
-                <li><Link> SHOES </Link></li>
-              </ul>   */}
-            </li>
-          </ul>
-        </section>
+          <section className='sideBarList'>
+            <ul>
+              <li>
+                <Link 
+                to='/newarrivals' 
+                onClick={() => handleDrawerLinkClick('New Arrivals')}
+                >
+                  NEW ARRIVAL
+                </Link>
+              </li>
+              <li>
+                <Link 
+                to='/men' 
+                onClick={() => handleDrawerLinkClick('Men')}
+                >
+                  MENS
+                </Link>
+                {/* <ul className='sideBarMenu'>
+                  <li><Link> HOODIES </Link></li>
+                  <li><Link> PANTS </Link></li>
+                  <li><Link> SHOES </Link></li>
+                </ul> */}
+              </li>
+              <li>
+                <Link 
+                to='/women' 
+                onClick={() => handleDrawerLinkClick('Women')}
+                >
+                  WOMENS
+                </Link>
+                {/* <ul className='sideBarMenu'>
+                  <li><Link> HOODIES </Link></li>
+                  <li><Link> PANTS </Link></li>
+                  <li><Link> SHOES </Link></li>
+                </ul> */}
+              </li>
+              <li>
+                <Link 
+                to='/kids' 
+                onClick={() => handleDrawerLinkClick('Children')}
+                >
+                  KIDS
+                </Link>
+                {/* <ul className='sideBarMenu'>
+                  <li><Link> HOODIES </Link></li>
+                  <li><Link> PANTS </Link></li>
+                  <li><Link> SHOES </Link></li>
+                </ul>   */}
+              </li>
+            </ul>
+          </section>
+        </div>
       </Drawer>
     </nav>
   );

@@ -31,6 +31,8 @@ a h1{
   display: flex;
   justify-content: center;
   margin-top: 5px;
+  font-family: 'Sixtyfour', sans-serif;
+  font-size: 36px;
 }
 
 @media (max-width: 1200px){
