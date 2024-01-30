@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 20%;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -21,6 +21,18 @@
 @media screen and (max-width: 768px) {
   .footer Button {
     margin: 5px;
+  }
+}
+
+@media(max-width:730px){
+  .footer{
+    margin-top: 25%;
+  }
+}
+
+@media(max-width:600px){
+  .footer{
+    margin-top: 30%;
   }
 }
 
