@@ -17,33 +17,43 @@ export default function Profile() {
   };
 
   return (
-    <div>
-      <h1>Account</h1>
-      <Container maxWidth="lg">
+    <div className="Profile">
+      <h1 style={{ marginLeft:'15%', marginTop:'2%', marginBottom:'2%'}}>Account</h1>
+      <Container maxWidth="md">
         <Paper elevation={3} style={{ 
           padding: '20px',
-          height: '100vh',
-          width: '100%',
+          height: '55vh',
+          width: '90%',
           backgroundColor:'#eeeeee',
           borderRadius: '10px' }}>
 
-          <h2>Profile </h2>
+          <h1 style={{ marginBottom:'2%'}}>Profile:</h1>
           <h4>First Name</h4>
-          <p>{user.firstName}</p>
+          <p style={{fontSize:'130%'}}>{user.firstName}</p>
           <h4>Last Name</h4>
-          <p>{user.lastName}</p>
+          <p style={{fontSize:'130%'}}>{user.lastName}</p>
           <h4>Email</h4>
-          <p>{user.email}</p>
+          <p style={{fontSize:'130%'}}>{user.email}</p>
+          
+          <div className="profileBtn" style={{ marginTop:'6%'}}>
+            <Button variant="contained" color="primary" onClick={handleLogout} 
+              sx={{ 
+                marginRight: '5%', 
+                backgroundColor: '#BF3131',
+                color: 'white', 
+                '&:hover': 
+                {filter: 'brightness(80%)', 
+                backgroundColor: '#BF3131'}}}
+                >
+              Logout
+            </Button>
 
-          <Button variant="contained" color="primary" onClick={handleLogout} style={{ marginRight: '5%' }}>
-            Logout
-          </Button>
-
-          <Button variant="contained" color="primary">
-            <Link to="/orderHistory">
-              View Order History
-            </Link>
-          </Button>
+            <Button variant="contained" color="primary" sx={{backgroundColor: '#BF3131', color: 'white', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#BF3131'} }}>
+              <Link to="/orderHistory">
+                View Order History
+              </Link>
+            </Button>
+          </div>  
         </Paper>
       </Container>
     </div>
