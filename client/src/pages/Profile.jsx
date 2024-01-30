@@ -39,16 +39,16 @@ export default function Profile() {
             <Button variant="contained" color="primary" onClick={handleLogout} 
               sx={{ 
                 marginRight: '5%', 
-                backgroundColor: '#BF3131',
+                backgroundColor: '#36409e',
                 color: 'white', 
                 '&:hover': 
                 {filter: 'brightness(80%)', 
-                backgroundColor: '#BF3131'}}}
+                backgroundColor: '#2c2f70'}}}
                 >
               Logout
             </Button>
 
-            <Button variant="contained" color="primary" sx={{backgroundColor: '#BF3131', color: 'white', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#BF3131'} }}>
+            <Button variant="contained" color="primary" sx={{backgroundColor: '#36409e', color: 'white', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#2c2f70'} }}>
               <Link to="/orderHistory">
                 View Order History
               </Link>
