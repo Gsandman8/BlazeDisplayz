@@ -62,13 +62,12 @@ function ProductItem(item) {
     <div className="card px-1 py-1" style={{border:"white",borderBottom:"black "}}>
       <Link to={`/products/${_id}`}>
         <div className="card-header" style={{backgroundColor:"white", color:"black", border:"black"}}>
-      <h2 style={{color:"black"}}>{name}</h2>
+      <h4 style={{color:"black"}}>{name}</h4>
       </div>
         <img
           alt={name}
           src={`/images/${image}`}
         />
-        <p style={{color:'black', fontWeight:'bold'}}>{name}</p>
       </Link>
       <div>
         <div> Only {quantity} {pluralize("item", quantity)} left!</div>
