@@ -4,3 +4,10 @@
   align-items: center;
   height: 50vh;
 }
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

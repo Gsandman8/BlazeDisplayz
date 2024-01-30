@@ -58,7 +58,7 @@ function ProductItem(item) {
   }
 
   return (
-    <div>
+    
     <div className="card px-1 py-1" style={{border:"white",borderBottom:"black "}}>
       <Link to={`/products/${_id}`}>
         <div className="card-header" style={{backgroundColor:"white", color:"black", border:"black"}}>
@@ -109,7 +109,7 @@ function ProductItem(item) {
     <br/>
     <br/>
     </div>
-    </div>
+
   );
 }
 

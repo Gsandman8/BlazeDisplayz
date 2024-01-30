@@ -43,7 +43,9 @@ const Men = () => {
                 })} style={{color:"black"}}>Shoes</Link>
             </nav>
             <hr />
+            <div className="row">
             <ProductList />
+            </div>
             <br /><br /><br /><br /><br />
             <hr />
             <a href="#top" className='text-center' style={{color:"black", fontSize:"60px"}}> Return to Top <ArrowUpwardIcon sx={{fontSize:"60px"}}/></a>
