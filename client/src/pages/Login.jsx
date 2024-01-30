@@ -103,7 +103,7 @@ function Login(props) {
           </div>
         ) : null} */}
         <div className="flex-row">
-          <Button type="submit" variant="contained" sx={{ backgroundColor: '#BF3131', color: 'white', fontSize: '17px', marginTop: '5%', borderRadius: '20px', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#BF3131' } }}>
+          <Button type="submit" variant="contained" sx={{ backgroundColor: '#36409e', color: 'white', fontSize: '17px', marginTop: '5%', borderRadius: '20px', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#2c2f70' } }}>
             Submit
           </Button>
         </div>
