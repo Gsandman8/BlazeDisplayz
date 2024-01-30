@@ -16,6 +16,7 @@ import Women from './pages/Women'
 import Kids from './pages/Kids'
 import NewArrivals from './pages/NewArrivals'
 import Profile from './pages/Profile'; 
+import MissingOrder from './pages/MissingOrder'
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,9 @@ const router = createBrowserRouter([
       }, {
         path:'/profile',
         element: <Profile/>
+      }, {
+        path:'/missingorder',
+        element: <MissingOrder/>
       }
     ],
   },
