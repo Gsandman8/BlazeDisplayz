@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import TextField from '@mui/material/TextField';
+import {useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 import './Footer.css';
 
 export default function Footer() {
+  const [newsletter, setNewsletter] = useState('');
+  const form = useRef();
+
   return (
     <footer className="footer">
       <Container align="center" >
@@ -18,14 +23,30 @@ export default function Footer() {
               <h3>Newsletter Signup:</h3>
             </Typography>
             <p className='newsDescription'>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>
-            <form>
+            <form ref={form} onChange={(e) => setNewsletter(e.target.value)}
+                onSubmit={(e)=>{
+                  e.preventDefault();
+                  console.log(newsletter)
+                  
+                  emailjs.sendForm('DBService', 'template_epdsnoo', form.current, 'Zpm2ybnuv9a7vDMBX')
+                  .then((result) => {
+                      console.log(result.text);
+                  }, (error) => {
+                      console.log(error.text);
+                  });
+
+                  setNewsletter('');
+                }}
+                  >
               <TextField
                 id="standard-basic"
                 label="Email"
                 variant="standard"
                 className='textfield'
+                name="newsletter"
                 InputLabelProps={{ style: { color: 'white' } }}
-                inputProps={{ style: { color: 'white', borderBottom: '3px solid white'} }}
+                inputProps={{ style: { color: 'white', borderBottom: '3px solid white'},
+                value: newsletter,}}
               />
             </form>  
           </Grid>
