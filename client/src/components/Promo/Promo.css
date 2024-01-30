@@ -1,0 +1,13 @@
+.promo{
+  width: 100%;
+  background-image: linear-gradient(to bottom,rgb(221, 221, 221), grey);
+  margin: 0;
+  text-align: center;
+}
+
+.promo p{
+  margin: 0;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  padding: 1%;
+}

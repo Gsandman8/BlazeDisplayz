@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import Cart from '../components/Cart';
 import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_CART,
@@ -85,9 +84,9 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1 row">
+        <div className="container my-1 row detailsContainer">
           <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-          <div className="col-6 mb-3 border border-dark rounded " style={{height:"250px"}} >
+          <div className="col-6 mb-3 border border-dark rounded description" >
           
 
           <h2 className="text-center">{currentProduct.name}</h2>
@@ -98,18 +97,18 @@ function Detail() {
             <strong>Price: </strong>${currentProduct.price}{' '}
           </p>
           <p className='text-center'>
-            <button className='rounded' onClick={addToCart}>Add to Cart</button>
+            <button className='rounded cartBtn' onClick={addToCart}>Add to Cart</button>
             <button
-              className='rounded'
+              className='rounded cartBtn'
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
             </button>
           </p>
-          <Link to={`/${currentCategory}`} ><p style={{color:"black"}}>← Back to Products</p></Link>
+          <Link to={`/${currentCategory}`} ><p className='goBack'>← Back to Products</p></Link>
 
-          <img className='border border-dark' style={{position: "relative", left:"90px", top:"100px"}} src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
+          <img className='border border-dark blazeLogo' src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
           </div>
           <div className="col-6">
           <img
@@ -120,12 +119,11 @@ function Detail() {
           </div>
         </div>
       ) : null}
-          {loading ? 
-            <div className="loaderContainer">
-              <BeatLoader color={'orange'} height={4} width={150} />
-            </div> 
-            : null}
-      <Cart />
+        {loading ? 
+          <div className="loaderContainer">
+            <BeatLoader color={'#732c7b'} height={4} width={150} />
+          </div> 
+        : null}
     </>
   );
 }

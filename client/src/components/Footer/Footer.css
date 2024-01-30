@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 20%;
+  font-family: 'Rubik', sans-serif;
 }
 
 .newsDescription {
@@ -13,12 +14,37 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    height: 100%;
+    height: 250px;
   }
 }
 
-@media screen and (max-width: 586px) {
-  .footer Button{
-    width: 70%;
+@media screen and (max-width: 768px) {
+  .footer Button {
+    margin: 5px;
   }
+}
+
+@media(max-width:730px){
+  .footer{
+    margin-top: 25%;
+  }
+}
+
+@media(max-width:600px){
+  .footer{
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .footer {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    height: 350%;
+  }
+  
 }

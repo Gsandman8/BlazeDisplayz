@@ -1,6 +1,3 @@
-// import ProductList from "../components/ProductList";
-// import CategoryMenu from "../components/CategoryMenu";
-// import Cart from "../components/Cart";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 
@@ -31,13 +28,6 @@ import wproduct6 from '/images/products/categories/womensHoodies/product6.png';
 export default function Home() {
   return (
     <main>
-      {/* <CategoryMenu />
-      <ProductList /> */}
-      {/* <Cart /> */}
-      <section className='banner'>
-        <p>FREE SHIPPING FOR CLUB MEMBERS!</p>
-      </section>
-
       <section className="carouselContainer">
         <Carousel>
           <Carousel.Item>
