@@ -39,16 +39,23 @@ export default function Profile() {
             <Button variant="contained" color="primary" onClick={handleLogout} 
               sx={{ 
                 marginRight: '5%', 
-                backgroundColor: '#36409e',
+                backgroundImage: 'linear-gradient(to top, #732c7b, #36409e)',
                 color: 'white', 
                 '&:hover': 
-                {filter: 'brightness(80%)', 
+                { filter: 'brightness(80%)',
                 backgroundColor: '#2c2f70'}}}
                 >
               Logout
             </Button>
 
-            <Button variant="contained" color="primary" sx={{backgroundColor: '#36409e', color: 'white', '&:hover': {filter: 'brightness(80%)', backgroundColor: '#2c2f70'} }}>
+            <Button variant="contained" color="primary" 
+            sx={{
+              backgroundImage: 'linear-gradient(to top, #732c7b, #36409e)',
+              color: 'white',
+              '&:hover': 
+              { filter: 'brightness(80%)',
+              backgroundColor: '#2c2f70' }}}
+            >
               <Link to="/orderHistory">
                 View Order History
               </Link>
