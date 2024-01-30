@@ -20,7 +20,7 @@ export default function MissingOrder() {
         See your order even if you are not a registered user.
         Enter the order number and your last name.
       </p>
-      <Link to="/other-page" style={{ textDecoration: 'none' }}>
+      <Link to="/missingorder" style={{ textDecoration: 'none' }}>
         <Button 
           sx={{ 
             color: 'white', 
