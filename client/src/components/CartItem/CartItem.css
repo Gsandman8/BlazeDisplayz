@@ -46,6 +46,28 @@
   }
 }
 
+@media(max-width:550px){
+  .cartItemContainer{
+    width: 380px;
+  }
+}
+
+@media(max-width:500px){
+  .cartItemContainer{
+    width: 350px;
+  }
+}
+
+@media(max-width:450px){
+  .cartItemContainer{
+    width: 325px;
+  }
+  .qty{
+    margin-left: 10%;
+    font-size: 15px;
+   }
+}
+
 @media(max-width:414px){
   .cartItemContainer{
     width: 380px;
