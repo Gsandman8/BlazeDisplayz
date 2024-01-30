@@ -41,10 +41,16 @@ section h2, img{
 
 .createAccContainer form{
   margin: 10px;
+  &:hover{
+    color: black;
+  }
 }
 
 .createAccContainer input{
   border-bottom: solid 2px ;
+  &:hover{
+    border-bottom: solid 2.5px black;
+  }
 }
 
 .missingOrderContainer{
@@ -81,7 +87,9 @@ section h2, img{
 
 .createBtn{
   margin-top: 10px;
-  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
   color: white;
   border: none;
   background-color: #BF3131;
@@ -187,6 +195,27 @@ form {
 .error-text {
   color: var(--error);
 }
+
+/* sign up media queries */
+@media(max-width:991px){
+  .missingOrderContainer{
+    right: -10%;
+  }  
+}
+
+@media(max-width:836px){
+  .missingOrderContainer{
+    right: -5%;
+    width: 100%;
+    margin-right: 10px;
+  }
+  .createAccContainer form{
+    margin: 10px;
+    width: 50%;
+  }
+}
+
+/* end */
 
 @media screen and (max-width: 768px) {
   .card {
