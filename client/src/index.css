@@ -14,10 +14,8 @@ body {
 /* home page*/
 .banner{
   width: 100%;
-  height: 10%;
   background-image: linear-gradient(to bottom,rgb(221, 221, 221), grey);
   margin: 0;
-  padding: 1%;
   text-align: center;
 }
 
@@ -25,7 +23,7 @@ body {
   margin: 0;
   color: white;
   font-family: 'Rubik', sans-serif;
-
+  padding: 1%;
 }
 
 /* end */
@@ -216,5 +214,11 @@ form {
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .Profile Button {
+    margin: 2%;
   }
 }

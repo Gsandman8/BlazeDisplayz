@@ -10,6 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 import Header from './components/Header';
 import { StoreProvider } from './utils/GlobalState';
 import Footer from './components/Footer/Footer';
+import Promo from './components/Promo';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -36,6 +37,7 @@ function App() {
       <div>
         <StoreProvider>
           <Header />
+          <Promo/>
           <div className="container">
           <Outlet />
           </div>
