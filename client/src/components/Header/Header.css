@@ -15,13 +15,14 @@ section h1{
   font-family: 'Rubik', sans-serif;
 }
 
-.icons-container a, .langIcon{
-  margin-right: 10%;
+.icons-container #icon{
+  margin-right: 15px;
   color: white;
 }
 
 .icons-container{
-  margin-left: 15%;
+  margin-left: 40%;
+  margin-top: 10px;
 }
 
 .icons-container #icon{
@@ -36,9 +37,30 @@ a h1{
   font-size: 36px;
 }
 
+@media(max-width:1399px){
+  a h1{
+    margin-left: 80px;
+  }
+}
+
 @media (max-width: 1200px){
   .icons-container .heartIcon {
     display: none;
+  }
+
+  a h1{
+    margin-left: 0px;
+  }
+}
+
+
+@media(max-width:1000px){
+  a h1{
+    font-size: 30px;
+  }
+
+  .icons-container{
+    margin-left: 100px;
   }
 }
 
@@ -56,6 +78,36 @@ a h1{
   }
 
   .icons-container{
+    margin-left: 70%;
+  }
+
+  a h1{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+@media(max-width:600px){
+  a h1{
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .icons-container{
+    margin-left: 40%;
+  }
+
+  .icons-container #icon{
+    margin-top: 5px;
+    font-size: 25px;
+  }
+}
+
+@media(max-width:500px){
+  a h1{
+    font-size: 16px;
+  }
+
+  .icons-container{
     margin-left: 50%;
   }
 }
@@ -66,12 +118,11 @@ a h1{
   }
 
   a h1{
-    font-size: 25px;
-    margin-left: 120px;
+    margin-left: 105px;
   }
 
   .icons-container{
-    margin-left: 185px;
+    margin-left: 190px;
   }
 
   .icons-container #icon{

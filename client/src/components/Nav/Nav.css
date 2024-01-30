@@ -2,6 +2,7 @@
   color: white;
   font-size: 15px;
   font-family: 'Rubik', sans-serif;
+
 }
 
 #menuList {
@@ -106,9 +107,18 @@
   }
 }
 
+@media(max-width:600px){
+  nav #icon{
+    font-size: 25px;
+  }
+
+  .heartIcon{
+    margin-top: 5px;
+  }
+}
+
 @media(max-width:414px) {
    nav #icon{
-    font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
