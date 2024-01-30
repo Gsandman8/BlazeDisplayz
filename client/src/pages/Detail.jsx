@@ -17,12 +17,13 @@ import { BeatLoader } from 'react-spinners';
 function Detail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
+  console.log(state);
 
   const [currentProduct, setCurrentProduct] = useState({});
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
-  const { products, cart } = state;
+  const { products, cart, currentCategory } = state;
 
   useEffect(() => {
     // already in global store
@@ -84,28 +85,39 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+        <div className="container my-1 row">
+          <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+          <div className="col-6 mb-3 border border-dark rounded " style={{height:"250px"}} >
+          
 
-          <h2>{currentProduct.name}</h2>
+          <h2 className="text-center">{currentProduct.name}</h2>
 
-          <p>{currentProduct.description}</p>
+          <p className="text-center">{currentProduct.description}</p>
 
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
+          <p className='text-center'>
+            <strong>Price: </strong>${currentProduct.price}{' '}
+          </p>
+          <p className='text-center'>
+            <button className='rounded' onClick={addToCart}>Add to Cart</button>
             <button
+              className='rounded'
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
             </button>
           </p>
+          <Link to={`/${currentCategory}`} ><p style={{color:"black"}}>← Back to Products</p></Link>
 
+          <img className='border border-dark' style={{position: "relative", left:"50px", top:"100px"}} src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
+          </div>
+          <div className="col-6">
           <img
+            className="img-thumbnail text-center"
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          </div>
         </div>
       ) : null}
           {loading ? 
