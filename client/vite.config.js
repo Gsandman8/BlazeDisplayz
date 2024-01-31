@@ -18,5 +18,8 @@ export default defineConfig({
   test: {
     environment: 'happy-dom',
     globals: true
+  },
+  build: {
+    outDir: 'dist',
   }
 })
