@@ -20,6 +20,6 @@ export default defineConfig({
     globals: true
   },
   build:{
-    ourDir: 'build',
+    ourDir: 'client/dist',
   }
 })
