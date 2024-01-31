@@ -108,7 +108,7 @@ function Detail() {
           </p>
           <Link to={`/${currentCategory}`} ><p className='goBack'>← Back to Products</p></Link>
 
-          <img className='border border-dark blazeLogo' src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
+          <img className='border border-dark blazeLogo'  src={`/images/other/blaze.PNG`} alt="Blaze Diplayz Logo" />
           </div>
           <div className="col-6">
           <img
