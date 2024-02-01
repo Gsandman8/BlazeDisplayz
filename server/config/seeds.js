@@ -54,21 +54,43 @@ async function seed() {
      'childrensShoes',
      'childrensShirts'
     ];
+  // for (const categoryFile of categoryFiles) {
+  //   const products = require(`../../seed/categories/${categoryFile}`)({
+  //       categories,
+  //       tags
+  //   });
+  //   const categoryId = categories.find((cat) => cat.name.toLowerCase() === 'men').id;
+
+  //   const productsWithCategory = products.map(product => ({
+  //     ...product,
+  //     category: categoryId,
+  //   }));
+
+  //   await Product.insertMany(productsWithCategory);
+  //   console.log(`${categoryFile} products seeded`);
+  // }
   for (const categoryFile of categoryFiles) {
     const products = require(`../../seed/categories/${categoryFile}`)({
-        categories,
-        tags
+      categories,
+      tags
     });
-    const categoryId = categories.find((cat) => cat.name.toLowerCase() === 'men').id;
-
-    const productsWithCategory = products.map(product => ({
-      ...product,
-      category: categoryId,
-    }));
-
-    await Product.insertMany(productsWithCategory);
+  
+    for (const product of products) {
+      // Use the product's category name to find the corresponding categoryId
+      const categoryName = product.category.toLowerCase();
+      const categoryId = categories.find((cat) => cat.name.toLowerCase() === categoryName)._id;
+  
+      const productWithCategory = {
+        ...product,
+        category: categoryId,
+      };
+  
+      await Product.create(productWithCategory);
+    }
+  
     console.log(`${categoryFile} products seeded`);
   }
+
 
   process.exit();
 }
