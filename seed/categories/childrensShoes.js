@@ -9,7 +9,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product1.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -19,7 +19,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product2.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -29,7 +29,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product3.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -39,7 +39,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product1.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -49,7 +49,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product5.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -59,7 +59,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product6.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -69,7 +69,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product7.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -79,7 +79,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product8.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -89,7 +89,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product9.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -99,7 +99,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product10.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -109,7 +109,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product11.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -119,7 +119,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product12.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -129,7 +129,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product13.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -139,7 +139,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensShoes/product14.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]

@@ -8,7 +8,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product1.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -18,7 +18,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product2.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -28,7 +28,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product3.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -38,7 +38,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product4.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -48,7 +48,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product5.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -58,7 +58,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product6.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -68,7 +68,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product7.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -78,7 +78,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product8.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -88,7 +88,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product9.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -98,7 +98,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product10.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -108,7 +108,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product11.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -118,7 +118,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensPants/product12.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]

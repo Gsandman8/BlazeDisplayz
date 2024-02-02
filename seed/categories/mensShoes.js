@@ -7,7 +7,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product1.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -17,7 +17,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product2.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -27,7 +27,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product3.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -37,7 +37,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product4.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -47,7 +47,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product6.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -57,7 +57,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product7.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -67,7 +67,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product8.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -77,7 +77,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product9.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -87,7 +87,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product10.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -97,7 +97,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product11.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -107,7 +107,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product12.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -117,7 +117,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product13.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -127,7 +127,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product14.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -137,7 +137,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product15.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -147,7 +147,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensShoes/product16.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]

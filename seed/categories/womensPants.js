@@ -7,7 +7,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product1.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -17,7 +17,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product2.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -27,7 +27,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product3.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -37,7 +37,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product4.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -47,7 +47,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product5.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -57,7 +57,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product6.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -67,7 +67,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product7.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -77,7 +77,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product8.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -87,7 +87,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product9.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -97,7 +97,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product10.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -107,7 +107,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product11.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -117,7 +117,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product12.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -127,7 +127,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product13.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -137,7 +137,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product14.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -147,7 +147,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product15.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -157,7 +157,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensPants/product16.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]

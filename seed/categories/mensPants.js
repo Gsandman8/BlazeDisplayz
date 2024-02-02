@@ -8,7 +8,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product1.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -18,7 +18,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product2.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -28,7 +28,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product4.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -38,7 +38,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product5.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -48,7 +48,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product6.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -58,7 +58,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product7.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -68,7 +68,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product8.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -78,7 +78,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product9.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -88,7 +88,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product10.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -98,7 +98,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product11.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -108,7 +108,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product13.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -118,7 +118,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product14.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -128,7 +128,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product15.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -138,7 +138,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product16.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -148,7 +148,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product17.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]
@@ -158,7 +158,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/mensPants/product18.png',
-        category: categories[0]._id,
+        category: "Men",
         price: 69.99,
         quantity: 50,
         tags: [tags[1]._id]

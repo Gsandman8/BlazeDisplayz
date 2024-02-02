@@ -8,7 +8,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/womensTops/product1.png',
-        category: categories[1]._id,
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -17,8 +17,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Hand Out',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product2.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product2.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -27,8 +27,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Shutter Fly',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product3.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product3.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -37,8 +37,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Airplane Mode',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product4.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product4.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -47,8 +47,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Weaponized',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product6.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product6.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -57,8 +57,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Show Time',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product7.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product7.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -67,8 +67,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Night Rider',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product8.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product8.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -77,8 +77,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Necessary',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product9.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product9.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -87,8 +87,8 @@ module.exports = ({ categories, tags }) => [
         name: 'No Bammer',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product10.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product10.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -97,8 +97,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Chewy',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product11.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product11.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -107,8 +107,8 @@ module.exports = ({ categories, tags }) => [
         name: 'The Dash',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product12.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product12.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -117,8 +117,8 @@ module.exports = ({ categories, tags }) => [
         name: 'The Move',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product13.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product13.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -127,8 +127,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Bugatting',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product14.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product14.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -137,8 +137,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Old English',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product15.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product15.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -147,8 +147,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Iceberg Slim',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product16.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product16.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]
@@ -157,8 +157,8 @@ module.exports = ({ categories, tags }) => [
         name: 'Fake ID',
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-        image: '/products/categories/womensShoes/product17.png',
-        category: categories[1]._id,
+        image: '/products/categories/womensTops/product17.png',
+        category: "Women",
         price: 69.99,
         quantity: 50,
         tags: [tags[2]._id]

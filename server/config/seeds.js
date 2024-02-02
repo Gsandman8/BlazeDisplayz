@@ -71,28 +71,36 @@ async function seed() {
   // }
   for (const categoryFile of categoryFiles) {
     const products = require(`../../seed/categories/${categoryFile}`)({
-      categories,
-      tags
+        categories,
+        tags
     });
-  
+
     for (const product of products) {
-      // Use the product's category name to find the corresponding categoryId
-      const categoryName = product.category.toLowerCase();
-      const categoryId = categories.find((cat) => cat.name.toLowerCase() === categoryName)._id;
-  
-      const productWithCategory = {
-        ...product,
-        category: categoryId,
-      };
-  
-      await Product.create(productWithCategory);
+        // Use the product's category name to find the corresponding categoryId
+        const categoryName = product.category;
+        const foundCategory = categories.find((cat) => cat.name === categoryName);
+
+        if (foundCategory) {
+            const categoryId = foundCategory.id;
+
+            // Modify the current product object
+            product.category = categoryId;
+
+            // Insert the modified product into the database
+            await Product.create(product);
+        } else {
+            console.error(`Category not found for product: ${product.name}`);
+            console.log(`Product Category: ${product.category}`);
+            console.log(`Available Categories: ${categories.map(cat => cat.name).join(', ')}`);
+        }
     }
-  
+
     console.log(`${categoryFile} products seeded`);
-  }
+}
 
-
+  
   process.exit();
+  
 }
 
 seed();

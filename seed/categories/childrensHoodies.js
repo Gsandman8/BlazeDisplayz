@@ -7,7 +7,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensHoodies/product1.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[4]._id]
@@ -17,7 +17,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensHoodies/product2.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[4]._id]
@@ -27,7 +27,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensHoodies/product3.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[4]._id]
@@ -37,7 +37,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensHoodies/product4.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[4]._id]
@@ -47,7 +47,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensHoodies/product5.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[4]._id]
@@ -57,7 +57,7 @@ module.exports = ({ categories, tags }) => [
         description:
           'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
         image: '/products/categories/childrensHoodies/product6.png',
-        category: categories[2]._id,
+        category: "Children",
         price: 69.99,
         quantity: 50,
         tags: [tags[4]._id]
