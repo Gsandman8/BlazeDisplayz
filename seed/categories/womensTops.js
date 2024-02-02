@@ -11,7 +11,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Hand Out',
@@ -21,7 +21,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Shutter Fly',
@@ -31,7 +31,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Airplane Mode',
@@ -41,7 +41,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Weaponized',
@@ -51,7 +51,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Show Time',
@@ -61,7 +61,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Night Rider',
@@ -71,7 +71,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Necessary',
@@ -81,7 +81,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'No Bammer',
@@ -91,7 +91,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Chewy',
@@ -101,7 +101,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'The Dash',
@@ -111,7 +111,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'The Move',
@@ -121,7 +121,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Bugatting',
@@ -131,7 +131,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Old English',
@@ -141,7 +141,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Iceberg Slim',
@@ -151,7 +151,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
       {
         name: 'Fake ID',
@@ -161,7 +161,7 @@ module.exports = ({ categories, tags }) => [
         category: "Women",
         price: 69.99,
         quantity: 50,
-        tags: [tags[2]._id]
+        tags: [tags[0]._id]
       },
   
       //end of womens tops
